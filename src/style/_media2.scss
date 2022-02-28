@@ -1,0 +1,95 @@
+.voyage1 {
+  background: $dark;
+  padding: 50px;
+  position: relative;
+
+  .chute {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1260px;
+    height: 80%;
+
+  }
+
+  .voyageka1 {
+    position: relative;
+    padding-top: 0;
+    margin-left: 65px;
+
+    .slick-prev {
+      position: absolute;
+      width: 30px;
+      height: 10px;
+     
+      border-radius: 50%;
+      z-index: 10;
+
+
+     
+    }
+
+    .slick-next {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      z-index: 10;
+      left: 92%;
+
+      
+    }
+
+    .voyageka1__case {
+
+      // height: 600px;
+      height: 100%;
+      margin-top: 60px;
+
+      .paint {
+        width: 300px;
+        height: 250px;
+        position: relative;
+
+        &__marks {
+          img{
+               width: 70px;
+          height: 70px;
+          }
+       
+          display: flex;
+          position: absolute;
+          top: 15%;
+
+        }
+
+      }
+
+      .tooltip {
+        p {
+          font-family: Segoe UI;
+          font-size: 13px;
+          font-weight: 500;
+        }
+
+        font-size: 32px;
+        padding: 10px;
+        width: 300px;
+        height: 90px;
+        flex-wrap: wrap;
+        background-color: #fff;
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+
+        .tooltip2 {
+          display: flex;
+          column-gap: 15px;
+        }
+      }
+
+    }
+  }
+}
