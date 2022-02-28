@@ -1,0 +1,176 @@
+.postcard {
+
+    position: relative;
+    background-color: #093447;
+    width: 100%;
+    height: 700px;
+
+    &__map {
+        position: absolute;
+        width: 1200px;
+        height: 77%;
+        left: 0;
+    }
+
+    &__title {
+        text-align: center;
+        padding: 20px;
+
+        h2 {
+            font-family: "Serif Display";
+            font-size: 52px;
+            color: #FFFFFF;
+            text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        p {
+            margin: 0 auto;
+            width: 710px;
+            font-family: "Segoe UI";
+            font-weight: 600;
+            font-size: 16px;
+            color: #FFFFFF;
+            opacity: 0.7;
+        }
+    }
+
+    &__cards {
+        margin-top: 40px;
+        position: relative;
+
+
+        // transform: rotate(-15deg);
+        .row {
+            display: flex;
+            justify-content: space-between;
+
+            .card1 {
+                margin-top: 20px;
+                margin-left: 20px;
+                transform: rotate(-30deg);
+            }
+
+            .card2 {
+                margin-top: 180px;
+
+                .cardimg {
+                    margin: 0 auto;
+                    width: 230px;
+                    height: 165px;
+                    transform: rotate(0deg);
+                }
+
+            }
+
+            .card3 {
+                width: 230px;
+                height: 165px;
+                margin-right: 50px;
+                margin-top: 20px;
+                transform: rotate(35deg);
+
+                .cardimg3 {
+                    margin: 0 auto;
+                    width: 230px;
+                    height: 165px;
+                    transform: rotate(-15deg);
+                }
+            }
+
+            .card {
+                width: 250px;
+                height: 258px;
+
+                // height: 100%;
+                background: #FFFFFF;
+                box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+                border-radius: 15px;
+                text-align: center;
+
+                h3 {
+                    margin-top: -20px;
+                    font-family: "Segoe UI";
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #2A3950;
+                }
+
+                p {
+                    font-family: "Segoe UI";
+                    font-size: 15px;
+                    color: #006270;
+
+                }
+
+                img {
+                    margin: 0 auto;
+                    width: 230px;
+                    height: 165px;
+                    transform: rotate(14deg);
+                    animation: animate2 3s ease-in-out ;
+                    animation: animate2 7s infinite ease-in-out;
+                }
+                @keyframes animate2{
+                    from {
+                       transform: perspective(400px) rotateX(0deg);
+                    }
+            
+                    to {
+                       transform: perspective(400px) rotateX(360deg);
+                    }
+                }
+                .cardbtn {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 5px;
+                    column-gap: 20px;
+
+                    .viewbtn {
+                        background-color: $cyan;
+                        width: 100px;
+                        &:hover{
+                            width: 102px;
+background-color: $dark;
+color: $cyan;
+                        }
+                    }
+
+                    .bookbtn {
+                        color: $cyan;
+                        background-color: none;
+                        width: 100px;
+                        border-radius: 8px;
+                        border: 1px solid $cyan;
+                        background-color: #fff;
+                        
+                    }
+
+                }
+
+            }
+
+        }
+    }
+    &__pinmap{
+        position:absolute;
+        display: flex;
+               img{
+                   width: 73px;
+                   height: 90px;
+               }
+        .sure{
+                
+         .icon1{
+            margin-top: 260px;
+            margin-left: 270px;
+                }
+            
+        }
+        .icon2{
+            transform: translate(250%,-243%);
+        }
+        .icon3{
+            transform: translate(828%,73%);
+        }
+        }
+}

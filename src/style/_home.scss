@@ -1,0 +1,205 @@
+.home {
+    position: relative;
+background: $dark;
+background-image: url(../images/home/homebg.png ) ;
+background-size: 100% 100%;
+
+    // &__image {
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 120%;
+    //     z-index: -8;
+
+    // }
+  
+
+    &__title {
+        text-align: center;
+        font-family: DM Serif Display;
+        font-size: 84px;
+        text-align: center;
+        color: #006270;
+        background-image: url('../images/home/homebg.png');
+        color: transparent;
+        -webkit-background-clip: text;
+        animation: title 7s infinite ease-in-out;
+
+    }
+
+    @keyframes title {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 100% 100%;
+        }
+    }
+
+    &__desc {
+        transform: translate(40%, 40%);
+
+        font-family: "Segoe UI";
+        font-size: 20px;
+        width: 660px;
+        text-align: center;
+        color: #006270;
+    }
+
+    &__btnka {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+
+
+        .btn {
+            width: 150px;
+
+        }
+    }
+
+    .tabs {
+        margin-top: 250px;
+        max-width: 1170px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+
+      
+
+        &__head {
+            display: flex;
+            align-items: stretch;
+            column-gap: 30px;
+
+        }
+
+        &__toggle {
+
+            color: $dark;
+            font-family: "Segoe UI";
+            font-weight: 600;
+            font-size: 25px;
+            color: #2A3950;
+            display: flex;
+            width: 180px;
+            height: 55px;
+            align-items: center;
+            justify-content: center;
+            background: #F3F6F6;
+            cursor: pointer;
+
+            &.is-active {
+
+                background: #fff;
+                border-radius: 16px;
+            }
+        }
+
+        &__box {
+            position: relative;
+            display: flex;
+            column-gap: 30px;
+
+
+
+
+            .checkbox-container {
+                .checkbox {
+                    cursor: pointer;
+                    width: 16px;
+                    height: 16px;
+                }
+
+                label {
+                    font-family: "Segoe UI";
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: #009394;
+                }
+
+                position: absolute;
+                left: 0;
+                top: 60px;
+
+            }
+
+            input {
+
+                width: 190px;
+                height: 36px;
+                background: #FFFFFF;
+                border: 1px solid #2A3950;
+                border-radius: 10px;
+                padding: 10px;
+
+                &[type="search"]::-webkit-search-cancel-button {
+                    width: 8px;
+                    height: 8px;
+                    background-color: $dark;
+                }
+            }
+
+            p {
+                font-family: "Segoe UI";
+                font-weight: 600;
+                font-size: 14px;
+                color: #009394;
+
+            }
+
+            .btn {
+
+                button {
+                    margin-top: 15px;
+                    width: 160px;
+                    height: 36px;
+                    background-color: $cyan;
+                    text-align: center;
+                    color: $dark;
+                    font-size: 14px;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: $dark;
+                        color: $cyan;
+                    }
+                }
+
+            }
+
+        }
+
+
+
+        &__content {
+            padding: 30px;
+            display: none;
+
+            &.is-active {
+                display: block;
+            }
+
+        }
+
+
+        &__title {
+
+            font-family: "Segoe UI";
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 40px;
+            color: #2A3950;
+        }
+
+
+    }
+
+}

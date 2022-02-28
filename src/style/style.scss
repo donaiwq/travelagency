@@ -1,0 +1,381 @@
+@import url(../libs/slick/slick.css);
+@import url(../libs/slick/slick-theme.css);
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    // overflow:  hidden; 
+}
+
+@import"./variables";
+@import "./header";
+@import "./home";
+@import './hoildays';
+@import "./postcard";
+@import "./destination";
+@import "./packages";
+@import "./voyage";
+@import "./delight";
+@import "./conqueror";
+
+
+
+
+@media (max-width:1200px) {
+    img {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .home {
+        background-size: 90% 90%;
+
+        .container {
+            max-width: 992px;
+        }
+
+        .header {
+            &__row {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .push-button {
+                height: 30px;
+            }
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__desc {
+            font-size: 18px;
+        }
+
+        .tabs__box input {
+            width: 165px;
+        }
+
+    }
+
+    .packages {
+        .cloud {
+            width: auto;
+        }
+
+        .travelcard .slick-next {
+            margin-right: 150px;
+        }
+    }
+
+    .voyage {
+
+        &__case {
+            &__paint {
+                width: 250px;
+                height: 200px;
+            }
+
+            &__tooltip {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+        }
+    }
+
+    .delight {
+        width: auto;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 425px;
+    }
+
+    .section {
+        padding: 0 30px;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+
+    .home {
+        header {
+            display: none;
+        }
+
+        background-size: 100% 100%;
+
+        &__title {
+            font-size: 15px;
+        }
+
+
+
+        .push-button {
+            font-size: 10px;
+            margin-top: -10px;
+            width: 80px;
+            height: 5px;
+        }
+
+
+
+        &__desc {
+            width: 125px;
+            font-size: 11px;
+            margin-left: 70px;
+            margin-top: -20px;
+
+        }
+
+        .tabs {
+            display: none;
+
+
+        }
+
+
+
+        .container {
+            max-width: 375px;
+        }
+
+    }
+
+    .holidays {
+        .shelter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &__busimg {
+                .bus {
+                    margin-top: 0;
+                    width: 287px;
+                    height: 200px;
+                }
+
+            }
+
+            &__content {
+
+
+                :nth-child(1) {
+                    font-size: 13px;
+                }
+
+                :nth-child(2) {
+                    font-size: 13px;
+                }
+
+                :nth-child(3) {
+                    margin: 0 auto;
+                    width: 200px;
+                    font-size: 10px;
+                }
+
+                .push-button {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .postcard {
+
+        &__title {
+            h2 {
+                font-size: 20px;
+            }
+
+            .descwow {
+                font-size: 8px;
+                width: 257px;
+            }
+        }
+
+        .sure {
+            display: none;
+        }
+
+        &__cards {
+            .row {
+                margin-top: -20px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 350px;
+                row-gap: 5px;
+
+                .card3 {
+                    margin-right: 1px;
+
+                    .cardimg3 {
+                        width: 120px;
+                        height: 90px;
+
+
+                    }
+
+                }
+
+                .card2 {
+                    .cardimg {
+                        width: 120px;
+                        height: 90px;
+                    }
+
+                }
+
+                .card {
+                    margin-left: 1px;
+
+                    transform: rotate(0);
+                    margin-top: 0;
+                    width: 175px;
+                    height: 145px;
+
+                    h3 {
+                        font-size: 12px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                    }
+
+                    .cardbtn {
+                        display: flex;
+
+                        .bookbtn {
+                            width: 50px;
+                            height: 25px;
+                            font-size: 8px;
+                        }
+
+                        .viewbtn {
+                            width: 50px;
+                            min-height: 25px;
+                            font-size: 8px;
+
+                        }
+                    }
+
+                    img {
+                        width: 120px;
+                        height: 90px;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .destinations {
+        position: relative;
+        .textwow {
+            position: absolute;
+            font-size: 15px;
+        }
+
+        .descwow {
+            position: absolute;
+            font-size: 12px;
+            width: 268px;
+        }
+
+        &__carusel {
+
+            .cardpop {
+                position: relative;
+                border-radius: 10px;
+&_btn{
+ .click{
+     
+     width: 70px;
+     height: 30px;
+ }
+}
+                .desert {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: 90px;
+                    height: 75px;
+                }
+
+                .desert1 {
+                    position: absolute;
+                    right: 0;
+                    border-radius: 10px;
+                    width: 90px;
+                    height: 75px;
+                }
+
+                &__desc {
+                    h3 {
+                        font-size: 12px;
+                    }
+
+                    .content1 {
+                        text-align: center;
+                        font-size: 8px;
+                        width: 200px;
+                    }
+                }
+            }
+
+            width: 250px;
+            height: 400px;
+        }
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .section {
+        padding: 0 1 5px;
+    }
+}

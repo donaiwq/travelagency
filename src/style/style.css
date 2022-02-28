@@ -1,0 +1,1629 @@
+@import url(../libs/slick/slick.css);
+@import url(../libs/slick/slick-theme.css);
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.push-button {
+  background: #2A3950;
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 150px;
+  min-height: 40px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.push-button:hover {
+  background: #00E0C7;
+  color: #2A3950;
+}
+
+.textwow {
+  font-family: DM Serif Display;
+  font-size: 62px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
+}
+
+.textwow:hover {
+  color: #00E0C7;
+}
+
+.descwow {
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.header {
+  background: #ffffff50;
+}
+
+.header h2 {
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 43px;
+  color: #00ABE6;
+}
+
+.header h2 span {
+  color: #2A3950;
+}
+
+.header h2 p {
+  font-family: "Myriad Pro";
+  font-size: 8.44538px;
+  line-height: 10px;
+  color: #2A3950;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .fon {
+  width: 1100px;
+  height: 100%;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.header__right_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
+}
+
+.header__right_list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.header__right_list-item h2 {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2A3950;
+}
+
+.header__right_list-item p {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  line-height: 16px;
+  color: #2A3950;
+}
+
+.home {
+  position: relative;
+  background: #2A3950;
+  background-image: url(../images/home/homebg.png);
+  background-size: 100% 100%;
+}
+
+.home__title {
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 84px;
+  text-align: center;
+  color: #006270;
+  background-image: url("../images/home/homebg.png");
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: title 7s infinite ease-in-out;
+          animation: title 7s infinite ease-in-out;
+}
+
+@-webkit-keyframes title {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes title {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.home__desc {
+  -webkit-transform: translate(40%, 40%);
+          transform: translate(40%, 40%);
+  font-family: "Segoe UI";
+  font-size: 20px;
+  width: 660px;
+  text-align: center;
+  color: #006270;
+}
+
+.home__btnka {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.home__btnka .btn {
+  width: 150px;
+}
+
+.home .tabs {
+  margin-top: 250px;
+  max-width: 1170px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.home .tabs__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.home .tabs__toggle {
+  color: #2A3950;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 25px;
+  color: #2A3950;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 180px;
+  height: 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F3F6F6;
+  cursor: pointer;
+}
+
+.home .tabs__toggle.is-active {
+  background: #fff;
+  border-radius: 16px;
+}
+
+.home .tabs__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.home .tabs__box .checkbox-container {
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+
+.home .tabs__box .checkbox-container .checkbox {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.home .tabs__box .checkbox-container label {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 15px;
+  color: #009394;
+}
+
+.home .tabs__box input {
+  width: 190px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #2A3950;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.home .tabs__box input[type="search"]::-webkit-search-cancel-button {
+  width: 8px;
+  height: 8px;
+  background-color: #2A3950;
+}
+
+.home .tabs__box p {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 14px;
+  color: #009394;
+}
+
+.home .tabs__box .btn button {
+  margin-top: 15px;
+  width: 160px;
+  height: 36px;
+  background-color: #00E0C7;
+  text-align: center;
+  color: #2A3950;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.home .tabs__box .btn button:hover {
+  background-color: #2A3950;
+  color: #00E0C7;
+}
+
+.home .tabs__content {
+  padding: 30px;
+  display: none;
+}
+
+.home .tabs__content.is-active {
+  display: block;
+}
+
+.home .tabs__title {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #2A3950;
+}
+
+.holidays {
+  padding: 70px 50px;
+  position: relative;
+  top: 0;
+  background-color: #2A3950;
+}
+
+.holidays .shelter {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.holidays .shelter::before {
+  position: absolute;
+  left: 20%;
+  -webkit-animation: flybirds 5s linear infinite;
+          animation: flybirds 5s linear infinite;
+  content: url("../images/holidays/birds.png");
+}
+
+@-webkit-keyframes flybirds {
+  from {
+    top: 0;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes flybirds {
+  from {
+    top: 0;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+.holidays .shelter__busimg .bus {
+  margin-top: 105px;
+  width: 570px;
+  height: 360px;
+  left: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 9;
+  -webkit-animation: bus 3s ease-in-out;
+          animation: bus 3s ease-in-out;
+  -webkit-animation: bus duration 300ms;
+          animation: bus duration 300ms;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  cursor: pointer;
+}
+
+.holidays .shelter__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+}
+
+.holidays .shelter__content :nth-child(1) {
+  font-family: Denk One;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #c2c2c2;
+}
+
+.holidays .shelter__content :nth-child(2) {
+  width: 500px;
+  font-family: DM Serif Display;
+  font-size: 45px;
+  color: #FFFFFF;
+  text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.25);
+}
+
+.holidays .shelter__content :nth-child(3) {
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  width: 450px;
+}
+
+.holidays .shelter__content .btnka {
+  background-color: #00E0C7;
+  color: #2A3950;
+  font-weight: 600;
+  width: 160px;
+  height: 50px;
+}
+
+.holidays .shelter__content .btnka:hover {
+  background-color: #2A3950;
+  color: #00E0C7;
+}
+
+.holidays .shelter__content .plane img {
+  top: 295px;
+  position: absolute;
+  right: 0;
+  -webkit-animation: animate 10s infinite ease-in-out;
+          animation: animate 10s infinite ease-in-out;
+}
+
+@-webkit-keyframes animate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    right: 0;
+    top: -15%;
+  }
+  to {
+    -webkit-transform: rotate(380deg);
+            transform: rotate(380deg);
+    right: 87%;
+    top: 39%;
+  }
+}
+
+@keyframes animate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    right: 0;
+    top: -15%;
+  }
+  to {
+    -webkit-transform: rotate(380deg);
+            transform: rotate(380deg);
+    right: 87%;
+    top: 39%;
+  }
+}
+
+.holidays .shelter__content .road img {
+  right: 170px;
+  top: 200px;
+  bottom: 10px;
+  position: absolute;
+}
+
+.postcard {
+  position: relative;
+  background-color: #093447;
+  width: 100%;
+  height: 700px;
+}
+
+.postcard__map {
+  position: absolute;
+  width: 1200px;
+  height: 77%;
+  left: 0;
+}
+
+.postcard__title {
+  text-align: center;
+  padding: 20px;
+}
+
+.postcard__title h2 {
+  font-family: "Serif Display";
+  font-size: 52px;
+  color: #FFFFFF;
+  text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
+}
+
+.postcard__title p {
+  margin: 0 auto;
+  width: 710px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.postcard__cards {
+  margin-top: 40px;
+  position: relative;
+}
+
+.postcard__cards .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.postcard__cards .row .card1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.postcard__cards .row .card2 {
+  margin-top: 180px;
+}
+
+.postcard__cards .row .card2 .cardimg {
+  margin: 0 auto;
+  width: 230px;
+  height: 165px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.postcard__cards .row .card3 {
+  width: 230px;
+  height: 165px;
+  margin-right: 50px;
+  margin-top: 20px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.postcard__cards .row .card3 .cardimg3 {
+  margin: 0 auto;
+  width: 230px;
+  height: 165px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.postcard__cards .row .card {
+  width: 250px;
+  height: 258px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.postcard__cards .row .card h3 {
+  margin-top: -20px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 18px;
+  color: #2A3950;
+}
+
+.postcard__cards .row .card p {
+  font-family: "Segoe UI";
+  font-size: 15px;
+  color: #006270;
+}
+
+.postcard__cards .row .card img {
+  margin: 0 auto;
+  width: 230px;
+  height: 165px;
+  -webkit-transform: rotate(14deg);
+          transform: rotate(14deg);
+  -webkit-animation: animate2 3s ease-in-out;
+          animation: animate2 3s ease-in-out;
+  -webkit-animation: animate2 7s infinite ease-in-out;
+          animation: animate2 7s infinite ease-in-out;
+}
+
+@-webkit-keyframes animate2 {
+  from {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(0deg);
+  }
+  to {
+    -webkit-transform: perspective(400px) rotateX(360deg);
+            transform: perspective(400px) rotateX(360deg);
+  }
+}
+
+@keyframes animate2 {
+  from {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(0deg);
+  }
+  to {
+    -webkit-transform: perspective(400px) rotateX(360deg);
+            transform: perspective(400px) rotateX(360deg);
+  }
+}
+
+.postcard__cards .row .card .cardbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.postcard__cards .row .card .cardbtn .viewbtn {
+  background-color: #00E0C7;
+  width: 100px;
+}
+
+.postcard__cards .row .card .cardbtn .viewbtn:hover {
+  width: 102px;
+  background-color: #2A3950;
+  color: #00E0C7;
+}
+
+.postcard__cards .row .card .cardbtn .bookbtn {
+  color: #00E0C7;
+  background-color: none;
+  width: 100px;
+  border-radius: 8px;
+  border: 1px solid #00E0C7;
+  background-color: #fff;
+}
+
+.postcard__pinmap {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.postcard__pinmap img {
+  width: 73px;
+  height: 90px;
+}
+
+.postcard__pinmap .sure .icon1 {
+  margin-top: 260px;
+  margin-left: 270px;
+}
+
+.postcard__pinmap .icon2 {
+  -webkit-transform: translate(250%, -243%);
+          transform: translate(250%, -243%);
+}
+
+.postcard__pinmap .icon3 {
+  -webkit-transform: translate(828%, 73%);
+          transform: translate(828%, 73%);
+}
+
+.destinations {
+  position: relative;
+  background-color: #2A3950;
+  padding: 50px;
+}
+
+.destinations__textbox {
+  position: relative;
+  padding: 30px;
+}
+
+.destinations__textbox p {
+  margin: 0 auto;
+  width: 850px;
+}
+
+.destinations__textbox::before {
+  position: absolute;
+  top: -15%;
+  left: 38%;
+  content: url("../images/destinations/plane.svg");
+  -webkit-animation: animate 10s infinite ease-in-out;
+          animation: animate 10s infinite ease-in-out;
+}
+
+@keyframes animate {
+  from {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    left: 0;
+    top: -15%;
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    left: 87%;
+    top: 15%;
+  }
+}
+
+.destinations__textbox::after {
+  position: absolute;
+  top: 55%;
+  left: -6%;
+  content: url("../images/destinations/journey.svg");
+}
+
+.destinations__carusel {
+  margin: 0 auto;
+  width: 850px;
+  height: 500px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
+          box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
+  border-radius: 50px;
+}
+
+.destinations__carusel h3 {
+  text-align: center;
+}
+
+.destinations__carusel .cardpop {
+  position: relative;
+}
+
+.destinations__carusel .cardpop .desert {
+  position: absolute;
+  right: 0;
+  width: 300px;
+}
+
+.destinations__carusel .cardpop .desert1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 5%;
+  position: absolute;
+  right: 2%;
+  width: 290px;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+}
+
+.destinations__carusel .cardpop__desc {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  row-gap: 10px;
+  width: 400px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.destinations__carusel .cardpop__desc .pushheart {
+  position: relative;
+  margin-left: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 90px;
+          column-gap: 90px;
+}
+
+.destinations__carusel .cardpop__desc .pushheart .comun::before {
+  top: -8px;
+  left: -40px;
+  position: absolute;
+  content: url("../images/destinations/comun.svg");
+}
+
+.destinations__carusel .cardpop__desc .pushheart .comun::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 0px;
+  border: 1px solid #636668;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.destinations__carusel .cardpop__desc .pushheart .heart::before {
+  position: absolute;
+  top: -8px;
+  left: 53px;
+  content: url("../images/destinations/heart.svg");
+  -webkit-animation: heart 5s infinite ease-in-out;
+          animation: heart 5s infinite ease-in-out;
+  -webkit-animation-timing-function: unset;
+          animation-timing-function: unset;
+}
+
+@-webkit-keyframes heart {
+  from {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes heart {
+  from {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.destinations__carusel .cardpop__desc h3 {
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.destinations__carusel .cardpop__desc .content1 {
+  position: relative;
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 18px;
+  color: #636668;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.destinations__carusel .cardpop__desc .content1::before {
+  position: absolute;
+  top: -143px;
+  left: 0;
+  content: url("../images/destinations/hook.svg");
+  width: 15px;
+  height: 15px;
+}
+
+.destinations__carusel .cardpop__desc .content2 {
+  margin-top: -10px;
+  font-family: Segoe UI;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  color: #636668;
+}
+
+.destinations__carusel .cardpop__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-transform: translate(40%);
+          transform: translate(40%);
+  margin-top: 20px;
+}
+
+.destinations__carusel .cardpop__btn img {
+  width: 45px;
+  height: 45px;
+}
+
+.destinations__carusel .cardpop__btn .click {
+  height: 50px;
+  background: #00E0C7;
+}
+
+.packages {
+  background-color: #093447;
+  padding: 50px;
+  position: relative;
+}
+
+.packages .cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.packages .travelcard {
+  margin-top: 70px;
+}
+
+.packages .travelcard .slick-prev {
+  position: absolute;
+  margin-left: 900px;
+  top: -30px;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.packages .travelcard .slick-prev::before {
+  content: url("../images/packagaes/prev.svg");
+}
+
+.packages .travelcard .slick-next {
+  position: absolute;
+  margin-right: 230px;
+  top: -30px;
+  background-color: #00E0C7;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.packages .travelcard .slick-next::before {
+  content: url("../images/packagaes/next.svg");
+}
+
+.packages .travelcard .travelcard__box {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.packages .travelcard .travelcard__box img {
+  width: 300px;
+  height: 270px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+}
+
+.packages .travelcard .travelcard__box .bridgetext {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.packages .travelcard .travelcard__box .bridgetext :nth-child(1) {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.packages .travelcard .travelcard__box .bridgetext .loc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  padding: 15px;
+}
+
+.packages .travelcard .travelcard__box .bridgetext .loc :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.packages .travelcard .travelcard__box .bridgetext .loc :nth-child(1) img {
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+.packages .travelcard .travelcard__box .bridgetext .loc :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.packages .travelcard .travelcard__box .bridgetext .loc :nth-child(2) img {
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+.packages .travelcard .travelcard__box .bridgetext .loc .bigbenbtn {
+  width: 95px;
+  background: #00E0C7;
+}
+
+.voyage {
+  background: #2A3950;
+  padding: 50px;
+  position: relative;
+}
+
+.voyage .chute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1260px;
+  height: 80%;
+}
+
+.voyage .voyageka {
+  position: relative;
+  padding-top: 0;
+  margin-left: 65px;
+}
+
+.voyage .voyageka .slick-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 10;
+  -webkit-transform: translate(-21%, 12%);
+          transform: translate(-21%, 12%);
+}
+
+.voyage .voyageka .slick-prev::before {
+  content: url("../images/voyage/goahead.svg");
+}
+
+.voyage .voyageka .slick-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 10;
+  -webkit-transform: translate(-133%, 12%);
+          transform: translate(-133%, 12%);
+}
+
+.voyage .voyageka .slick-next::before {
+  content: url("../images/voyage/goahead1.svg");
+}
+
+.voyage .voyageka .voyageka__case {
+  height: 100%;
+  margin-top: 60px;
+}
+
+.voyage .voyageka .voyageka__case .paint {
+  width: 300px;
+  height: 250px;
+  position: relative;
+}
+
+.voyage .voyageka .voyageka__case .paint__marks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50px;
+}
+
+.voyage .voyageka .voyageka__case .tooltip {
+  font-size: 32px;
+  padding: 10px;
+  width: 300px;
+  height: 90px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.voyage .voyageka .voyageka__case .tooltip p {
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.voyage .voyageka .voyageka__case .tooltip .tooltip2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.delight {
+  background: #2A3950;
+  padding: 70px;
+  position: relative;
+}
+
+.delight .pinki {
+  position: relative;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.delight .pinki::before {
+  top: -20%;
+  left: 18%;
+  position: absolute;
+  content: url("../images/delight/palmtree.png");
+}
+
+.delight .pinki .dash {
+  position: absolute;
+  top: 27%;
+  -webkit-transform: translate(13%, 27%);
+          transform: translate(13%, 27%);
+  left: 0;
+  width: 80%;
+  height: 80%;
+}
+
+.delight .pinki .car {
+  -webkit-transform: translate(120%, 57%);
+          transform: translate(120%, 57%);
+  -webkit-animation: moveRight 5s linear infinite;
+          animation: moveRight 5s linear infinite;
+}
+
+@-webkit-keyframes moveRight {
+  from {
+    -webkit-transform: translate(200%, 57%);
+            transform: translate(200%, 57%);
+  }
+  to {
+    -webkit-transform: translate(0%, 57%);
+            transform: translate(0%, 57%);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    -webkit-transform: translate(200%, 57%);
+            transform: translate(200%, 57%);
+  }
+  to {
+    -webkit-transform: translate(0%, 57%);
+            transform: translate(0%, 57%);
+  }
+}
+
+.delight .pinki .pin1 {
+  -webkit-transform: translate(-325%, 75%);
+          transform: translate(-325%, 75%);
+}
+
+.delight .pinki .pin2 {
+  -webkit-transform: translate(810%, 75%);
+          transform: translate(810%, 75%);
+}
+
+.delight .boxy {
+  position: relative;
+  -webkit-transform: translate(12%);
+          transform: translate(12%);
+  padding: 30px;
+  margin-top: 100px;
+  width: 950px;
+  background: #006270;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.delight .boxy .search {
+  position: relative;
+}
+
+.delight .boxy .search input {
+  width: 890px;
+  height: 60px;
+  padding: 10px;
+}
+
+.delight .boxy .search__btn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background: #00E0C7;
+  color: #2A3950;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.delight .boxy .search__btn:hover {
+  background-color: #2A3950;
+  color: #00E0C7;
+}
+
+.delight .boxy__title {
+  width: 850px;
+}
+
+.delight .boxy__title p {
+  margin-bottom: 20px;
+}
+
+.conqueror {
+  background: #2A3950;
+}
+
+.conqueror .conclusion {
+  padding: 50px;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #006270;
+}
+
+.conqueror .conclusion .first {
+  width: 350px;
+  color: #fff;
+}
+
+.conqueror .conclusion .first p {
+  margin-top: 30px;
+}
+
+.conqueror .conclusion .intel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 90px;
+          column-gap: 90px;
+}
+
+.conqueror .conclusion .intel .navbar {
+  font-family: Segoe UI;
+  font-size: 22px;
+  text-align: left;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.conqueror .conclusion .intel .navbar li {
+  position: relative;
+  padding: 3px;
+}
+
+.conqueror .conclusion .intel .navbar li a {
+  position: relative;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.conqueror .conclusion .intel .navbar li a:hover {
+  border-bottom: 4px solid #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.conqueror .conclusion .intel .navbar li a:first-of-type {
+  opacity: 10;
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+}
+
+.conqueror .conclusion .intel .navbar li a:hover {
+  color: #00E0C7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.totally {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.totally p {
+  font-family: Segoe UI;
+  color: #00E0C7;
+}
+
+.totally .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  img {
+    width: 60px;
+    height: 60px;
+  }
+  .home {
+    background-size: 90% 90%;
+  }
+  .home .container {
+    max-width: 992px;
+  }
+  .home .header__row img {
+    width: 40px;
+    height: 40px;
+  }
+  .home .header .push-button {
+    height: 30px;
+  }
+  .home__title {
+    font-size: 32px;
+  }
+  .home__desc {
+    font-size: 18px;
+  }
+  .home .tabs__box input {
+    width: 165px;
+  }
+  .packages .cloud {
+    width: auto;
+  }
+  .packages .travelcard .slick-next {
+    margin-right: 150px;
+  }
+  .voyage__case__paint {
+    width: 250px;
+    height: 200px;
+  }
+  .voyage__case__tooltip img {
+    width: 30px;
+    height: 30px;
+  }
+  .delight {
+    width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 425px;
+  }
+  .section {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .home {
+    background-size: 100% 100%;
+  }
+  .home header {
+    display: none;
+  }
+  .home__title {
+    font-size: 15px;
+  }
+  .home .push-button {
+    font-size: 10px;
+    margin-top: -10px;
+    width: 80px;
+    height: 5px;
+  }
+  .home__desc {
+    width: 125px;
+    font-size: 11px;
+    margin-left: 70px;
+    margin-top: -20px;
+  }
+  .home .tabs {
+    display: none;
+  }
+  .home .container {
+    max-width: 375px;
+  }
+  .holidays .shelter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .holidays .shelter__busimg .bus {
+    margin-top: 0;
+    width: 287px;
+    height: 200px;
+  }
+  .holidays .shelter__content :nth-child(1) {
+    font-size: 13px;
+  }
+  .holidays .shelter__content :nth-child(2) {
+    font-size: 13px;
+  }
+  .holidays .shelter__content :nth-child(3) {
+    margin: 0 auto;
+    width: 200px;
+    font-size: 10px;
+  }
+  .holidays .shelter__content .push-button {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+  }
+  .postcard__title h2 {
+    font-size: 20px;
+  }
+  .postcard__title .descwow {
+    font-size: 8px;
+    width: 257px;
+  }
+  .postcard .sure {
+    display: none;
+  }
+  .postcard__cards .row {
+    margin-top: -20px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 350px;
+    row-gap: 5px;
+  }
+  .postcard__cards .row .card3 {
+    margin-right: 1px;
+  }
+  .postcard__cards .row .card3 .cardimg3 {
+    width: 120px;
+    height: 90px;
+  }
+  .postcard__cards .row .card2 .cardimg {
+    width: 120px;
+    height: 90px;
+  }
+  .postcard__cards .row .card {
+    margin-left: 1px;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    margin-top: 0;
+    width: 175px;
+    height: 145px;
+  }
+  .postcard__cards .row .card h3 {
+    font-size: 12px;
+  }
+  .postcard__cards .row .card p {
+    font-size: 10px;
+  }
+  .postcard__cards .row .card .cardbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .postcard__cards .row .card .cardbtn .bookbtn {
+    width: 50px;
+    height: 25px;
+    font-size: 8px;
+  }
+  .postcard__cards .row .card .cardbtn .viewbtn {
+    width: 50px;
+    min-height: 25px;
+    font-size: 8px;
+  }
+  .postcard__cards .row .card img {
+    width: 120px;
+    height: 90px;
+  }
+  .destinations {
+    position: relative;
+  }
+  .destinations .textwow {
+    position: absolute;
+    font-size: 15px;
+  }
+  .destinations .descwow {
+    position: absolute;
+    font-size: 12px;
+    width: 268px;
+  }
+  .destinations__carusel {
+    width: 250px;
+    height: 400px;
+  }
+  .destinations__carusel .cardpop {
+    position: relative;
+    border-radius: 10px;
+  }
+  .destinations__carusel .cardpop_btn .click {
+    width: 70px;
+    height: 30px;
+  }
+  .destinations__carusel .cardpop .desert {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 90px;
+    height: 75px;
+  }
+  .destinations__carusel .cardpop .desert1 {
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+    width: 90px;
+    height: 75px;
+  }
+  .destinations__carusel .cardpop__desc h3 {
+    font-size: 12px;
+  }
+  .destinations__carusel .cardpop__desc .content1 {
+    text-align: center;
+    font-size: 8px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section {
+    padding: 0 1 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

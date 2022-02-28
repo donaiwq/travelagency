@@ -1,0 +1,96 @@
+.voyage {
+  background: $dark;
+  padding: 50px;
+  position: relative;
+
+  .chute {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1260px;
+    height: 80%;
+
+  }
+
+  .voyageka {
+    position: relative;
+    padding-top: 0;
+    margin-left: 65px;
+
+    .slick-prev {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      z-index: 10;
+      transform: translate(-21%, 12%);
+
+      &::before {
+        content: url('../images/voyage/goahead.svg');
+      }
+    }
+
+    .slick-next {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      z-index: 10;
+      transform: translate(-133%, 12%);
+
+      &::before {
+
+        content: url('../images/voyage/goahead1.svg');
+      }
+    }
+
+    .voyageka__case {
+
+      // height: 600px;
+      height: 100%;
+      margin-top: 60px;
+
+      .paint {
+        width: 300px;
+        height: 250px;
+        position: relative;
+
+        &__marks {
+          display: flex;
+          position: absolute;
+          top: 50px;
+
+        }
+
+      }
+
+      .tooltip {
+        p {
+          font-family: Segoe UI;
+          font-size: 13px;
+          font-weight: 500;
+        }
+
+        font-size: 32px;
+        padding: 10px;
+        width: 300px;
+        height: 90px;
+        flex-wrap: wrap;
+        background-color: #fff;
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+
+        .tooltip2 {
+          display: flex;
+          column-gap: 15px;
+        }
+      }
+
+    }
+  }
+}

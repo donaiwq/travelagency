@@ -1,0 +1,119 @@
+.packages {
+    background-color: #093447;
+    padding: 50px;
+    position: relative;
+
+    .cloud {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+      width: 100%;
+        height: 100%;
+    }
+
+    .travelcard {
+        margin-top: 70px; 
+        .slick-prev {
+            position: absolute;
+            margin-left: 900px;
+            top: -30px;
+            background-color: transparent;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+
+            &::before {
+                content: url('../images/packagaes/prev.svg');
+            }
+        }
+
+        .slick-next {
+            position: absolute;
+            margin-right: 230px;
+            top: -30px;
+            background-color: $cyan;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+
+            &::before {
+                content: url('../images/packagaes/next.svg');
+            }
+        }
+
+        .travelcard__box {
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding: 10px;
+
+            img {
+                // padding: 20px;
+                width: 300px;
+                height: 270px;
+                border-radius: 15px;
+                border: 1px solid #fff;
+                
+            }
+
+            .bridgetext {
+                width: 300px;
+                margin-top: 10px;
+
+                :nth-child(1) {
+                    font-family: Segoe UI;
+                    font-weight: bold;
+                    font-size: 25px;
+                    color: #FFFFFF;
+                }
+                .loc {
+                    display: flex;
+                    column-gap: 15px;
+                    padding: 15px;
+                    :nth-child(1) {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 5px;
+                        font-family: Segoe UI;
+                        font-weight: 600;
+                        font-size: 17px;
+                        color: #FFFFFF;
+
+                        img {
+                            width: 15px;
+                            height: 15px;
+                            border: none;
+                        }
+                    }
+
+                    :nth-child(2) {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 5px;
+                        font-family: Segoe UI;
+                        font-weight: 600;
+                        font-size: 17px;
+                        color: #FFFFFF;
+
+                        img {
+                            width: 15px;
+                            height: 15px;
+                            border: none;
+                        }
+
+
+                    }
+
+                    .bigbenbtn {
+                        width: 95px;
+                        background: $cyan;
+                    }
+                }
+            }
+        }
+
+    }
+}
