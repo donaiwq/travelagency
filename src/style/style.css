@@ -1650,16 +1650,10 @@
 }
 
 @media (max-width: 425px) {
-  .packages {
-    display: none;
-  }
-  .voyage {
-    display: none;
-  }
   .home {
     background-size: 100% 100%;
   }
-  .home header {
+  .home header__row {
     display: none;
   }
   .home__title {

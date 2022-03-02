@@ -32,13 +32,7 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
   });
 
-$('.travelcard1').slick({
-  slidesToShow: 1,
-    slidesToScroll: 1,
-  
-  autoplay: false,
-  autoplaySpeed: 2000,
-});
+
 
 
 $('.voyageka').slick({
@@ -47,13 +41,7 @@ $('.voyageka').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
 });
-$('.voyageka1').slick({
 
-  infinite: true,
-autoplay:true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
 
 
 
