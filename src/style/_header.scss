@@ -68,6 +68,15 @@ color: #2A3950;
             }
         }
     }
-
+    .burger{
+        position: fixed;
+       top: 30px;
+       right: 30px;
+        width: 30px;height: 30px;
+        background-color: $dark;
+       &.active{
+            background-color: white;
+        }
+    }
 }
 
