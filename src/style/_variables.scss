@@ -7,35 +7,42 @@ $dark:#2A3950;
     box-sizing: border-box;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
- width: 150px;
+    width: 150px;
     min-height: 40px;
     border: none;
     color: #fff;
     cursor: pointer;
-    transition: 0.3s;
-    &:hover{
-        
-       background:$cyan ;
+    transition: 0.7s;
+
+    &:hover {
+        font-family: DM Serif Display;
+        font-size: 15px;
+        background: transparent;
         color: $dark;
+        transition: 0.7s;
+
     }
 }
-.textwow{
-    font-family: DM Serif Display;
-font-size: 62px;
-text-align: center;
-color: #FFFFFF;
-text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
-&:hover{
-    color: $cyan;
- 
 
+.textwow {
+    font-family: DM Serif Display;
+    font-size: 62px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+        color: $cyan;
+
+
+    }
 }
-}
-.descwow{
+
+.descwow {
     font-family: Segoe UI;
-font-weight: 600;
-font-size: 20px;
-text-align: center;
-color: #FFFFFF;
-opacity: 0.7;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
 }

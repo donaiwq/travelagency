@@ -1,0 +1,159 @@
+.custom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  &.active {
+      display: flex;
+  }
+
+  .modal-request {
+      position: relative;
+      width: 380px;
+      height: 420px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 70px 100px 110px;
+      background-color: #fff;
+      border-radius: 12px;
+
+      &.active {
+          display: flex;
+      }
+
+      h2 {
+          text-align: center;
+          font-size: 32px;
+          margin-bottom: 51px;
+      }
+      .input7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    
+    }
+    .formka{
+        // width: 360px;
+        padding: 4rem 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 25px rgba(92, 99 ,105,.2);   
+    }
+   
+    .formka__div{
+        position: relative;
+        height: 48px;
+        margin-bottom: 1.5rem;
+    
+    
+    }
+    .formka__div:focus-within span{
+        top: 0;
+        left: 5px;
+       
+    }
+    span {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        transition: all 1s;
+    }
+    .formka__input{
+       
+        
+        
+        font-size: 1rem ;
+        border: 1px solid gainsboro  ;
+        border-radius: .5rem;
+        outline: none;
+        padding: 1rem;
+        background: none;
+        z-index: 1;
+    }
+    .formka__label{
+        position: absolute;
+    
+        left: 1rem;
+        top: 1rem;
+        padding: 0 .25rem;
+        background-color: #fff;
+        color: rgb(150, 150, 182);
+        font-size: 1rem;
+        transition: .3s;
+    }
+    
+   
+    .formka__input:focus + .formka__label{
+        top: -.5rem;
+        left: .8rem;
+        color:  rgb(34, 65, 199);
+        font-size: 1rem;
+        font-weight: 500;
+        z-index: 10;
+    }
+    .formka__input:not.formka__input:not(:focus)+ .formka__label{
+        top: -.5rem;
+        left: .8rem;
+      
+        font-size: 1rem;
+        font-weight: 500;
+        z-index: 10;
+    }
+
+      input {
+        
+          // width: 100%;
+          margin-bottom: 26px;
+          font-size: 14px;
+          padding: 0 12px;
+          background: rgba(18, 17, 39, 0.04);
+          border: 1px solid rgba(18, 17, 39, 0.12);
+          border-radius: 6px;
+          resize: none;
+
+          &::placeholder {
+              color: #78808F;
+          }
+      }
+
+      p {
+          font-size: 17px;
+          color: #8890A0;
+          text-align: center;
+          margin-top: 52px;
+          max-width: 270px;
+      }
+
+      &__btn {
+          max-width: 270px;
+          width: 100%;
+      }
+  }
+
+  .close-btn {
+     
+      position: absolute;
+      top: -5px;
+      right: -35px;
+      padding: 5px;
+      display: flex;
+      line-height: 1;
+      font-size: 1rem;
+      color: $dark;
+      border-radius: 5px;
+      border-radius: 5px;
+      &:hover{
+        background-color:$dark;
+        color: $cyan;
+      }
+  }
+}

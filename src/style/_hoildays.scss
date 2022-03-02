@@ -11,22 +11,25 @@
     display: flex;
     justify-content: space-between;
     column-gap: 50px;
-    &::before{
+
+    &::before {
       position: absolute;
- left: 20%;
+      left: 20%;
       animation: flybirds 5s linear infinite;
       content: url('../images/holidays/birds.png');
     }
+
     @keyframes flybirds {
       from {
-top: 0;
-       
+        top: 0;
+
       }
 
       to {
         top: 50%;
       }
     }
+
     &__busimg {
 
 
@@ -42,7 +45,7 @@ top: 0;
         animation: bus duration 300ms;
         animation-iteration-count: 3;
         cursor: pointer;
-     
+
       }
 
       // @keyframes bus {
@@ -94,18 +97,18 @@ top: 0;
 
 
 
-      .btnka {
-        background-color: $cyan;
-        color: $dark;
-        font-weight: 600;
-        width: 160px;
-        height: 50px;
+      // .btnka {
+      //   background-color: $cyan;
+      //   color: $dark;
+      //   font-weight: 600;
+      //   width: 160px;
+      //   height: 50px;
 
-        &:hover {
-          background-color: $dark;
-          color: $cyan;
-        }
-      }
+      //   &:hover {
+      //     background-color: $dark;
+      //     color: $cyan;
+      //   }
+      // }
 
 
 

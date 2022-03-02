@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="./src/images/header/logo.svg">
     <link rel="stylesheet" href="./src/style/style.css">
-
 </head>
 
 <body>
-
     <main>
         <section class="home">
             <div class="container">
@@ -35,14 +34,14 @@
                                         </div>
                                     </div>
                                     <div class="header__right_list-item">
-                                        <img src="./src/images/header/agent.svg" alt="case">
+                                        <img class="agent" src="./src/images/header/agent.svg" alt="case">
                                         <div>
                                             <h2 class="textwow">Agent</h2>
                                             <p class="textwow">Manage your bookings</p>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="push-button">SignUp</button>
+                                <button id="request-btn" class="btn custom-btn push-button">SignUp</button>
                             </div>
                         </div>
                     </div>
@@ -65,19 +64,19 @@
                             <form class="tabs__box" action="">
                                 <div class="tabs__travel">
                                     <p>From</p>
-                                    <input type="search">
+                                    <input type="search" placeholder="Go Ahead">
                                 </div>
                                 <div class="travel">
                                     <p>To</p>
-                                    <input type="search">
+                                    <input type="date">
                                 </div>
                                 <div class="travel">
                                     <p>Departure</p>
-                                    <input type="search">
+                                    <input type="week">
                                 </div>
                                 <div class="travel">
-                                    <p>Guests,class</p>
-                                    <input type="search">
+                                    <p>LAND</p>
+                                    <select name="dona"> <option value="country">New Zeland</option><option value="Asia">China</option><option value="">Scotland</option><option value="">Switzerland</option></select>
                                 </div>
                                 <div class="travel">
                                     <div class="btn"><button class="push-button">Search now</button></div>
@@ -123,10 +122,10 @@
                             <p class="tabs__text"></p>
                         </div>
                         <div class="tabs__content">
-                            <p class="tabs__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-                                itaque est exercitationem optio tempora at amet quo unde ipsam nobis, reprehenderit
-                                expedita repellat iusto rerum magnam? Inventore. Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ea totam hic autem optio dolore, ut quisquam nesciunt!</p>
+                            <form class="tabs__box" action="">
+                        <img class="vacation" src="./src/images/home/vacation.gif" alt="">
+
+                            </form>
                         </div>
 
 
@@ -155,7 +154,7 @@
                             readable content of a
                             page when looking at its layout. The point of using Lorem Ipsum is that it has a
                             more-or-less.</p>
-                        <button class=" push-button btnka">Learn More</button>
+                        
                         <div class="plane">
                             <img class="fly" src="./src/images/holidays/airplane.svg" alt="">
 
@@ -163,7 +162,7 @@
                         <div class="road">
                             <img src="./src/images/holidays/road.png" alt="">
                         </div>
-
+<button class="push-button">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -362,85 +361,6 @@
                 </div>
             </div>
         </section>
-
-        <section class="packages1">
-            <div class="container">
-                <div class="entourage"><img class="cloud" src="./src/images/packagaes/cloud7.png" alt=""></div>
-                <h3 class="textwow">
-                    Tour Packeges Available</h3>
-                <p class="descwow">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, a
-                    galley of type and scrambled it to make a type specimen book.</p>
-                <div class="travelcard1">
-
-
-                    <div class="travelcard1__box">
-                        <div class="bridge">
-                            <img src="./src/images/packagaes/bigben.png" alt="">
-                            <div class="bridgetext">
-                                <h4>Enjoy the beauty of the
-                                    Rialto Bridge</h4>
-                                <div class="loc">
-                                    <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
-                                    <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
-                                    <button class=" bigbenbtn push-button">View Details</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="travelcard1__box">
-                        <div class="bridge">
-                            <img src="./src/images/packagaes/coast.png" alt="">
-                            <div class="bridgetext">
-                                <h4>Enjoy the beauty of the
-                                    Rialto Bridge</h4>
-                                <div class="loc">
-                                    <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
-                                    <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
-                                    <button class=" bigbenbtn push-button">View Details</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="travelcard1__box">
-                        <div class="bridge">
-                            <img src="./src/images/packagaes/switzerland.png" alt="">
-                            <div class="bridgetext">
-                                <h4>Enjoy the beauty of the
-                                    Rialto Bridge</h4>
-                                <div class="loc">
-                                    <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
-                                    <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
-                                    <button class=" bigbenbtn push-button">View Details</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="travelcard1__box">
-                        <div class="bridge">
-                            <img src="./src/images/packagaes/paris.png" alt="">
-                            <div class="bridgetext">
-                                <h4>Enjoy the beauty of the
-                                    Rialto Bridge</h4>
-                                <div class="loc">
-                                    <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
-                                    <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
-                                    <button class=" bigbenbtn push-button">View Details</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="voyage">
             <div class="container">
                 <img class="chute" src="./src/images/voyage/chute.png" alt="">
@@ -548,116 +468,6 @@
                 </div>
             </div>
         </section>
-
-
-        <section class="voyage1">
-            <div class="container">
-                <img class="chute" src="./src/images/voyage/chute.png" alt="">
-                <h3 class="textwow">Flights to Popular Destinations</h3>
-                <p class="descwow">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, a
-                    galley of type and scrambled it to make a type specimen book.</p>
-                <div class="voyageka1">
-                    <div class="voyageka1__case">
-                        <img class="paint" src="./src/images/voyage/town.png" alt="">
-                        <div class="paint__marks"><img src="./src/images/voyage/star.svg" alt="">
-                            <img src="./src/images/voyage/cost.svg" alt="">
-
-                        </div>
-                        <div class="tooltip">
-                            <img src="./src/images/voyage/airplane.svg" alt="">
-                            <p>Mumbai</p> <img src="./src/images/voyage/gun.svg" alt="">
-                            <p>Egypt</p>
-                            <div class="tooltip2"><img src="./src/images/voyage/pinka.svg" alt="">
-                                <p>Cario, Egypt</p> <img src="./src/images/voyage/date.svg" alt="">
-                                <p>02 September, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="voyageka1__case">
-                        <img class="paint" src="./src/images/voyage/waterfall.png" alt="">
-                        <div class="paint__marks"><img src="./src/images/voyage/star.svg" alt="">
-                            <img src="./src/images/voyage/cost.svg" alt="">
-
-                        </div>
-                        <div class="tooltip">
-                            <img src="./src/images/voyage/airplane.svg" alt="">
-                            <p>Mumbai</p> <img src="./src/images/voyage/gun.svg" alt="">
-                            <p>Egypt</p>
-                            <div class="tooltip2"><img src="./src/images/voyage/pinka.svg" alt="">
-                                <p>Cario, Egypt</p> <img src="./src/images/voyage/date.svg" alt="">
-                                <p>02 September, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="voyageka1__case">
-                        <img class="paint" src="./src/images/voyage/horse..png" alt="">
-                        <div class="paint__marks"><img src="./src/images/voyage/star.svg" alt="">
-                            <img src="./src/images/voyage/cost.svg" alt="">
-
-                        </div>
-                        <div class="tooltip">
-                            <img src="./src/images/voyage/airplane.svg" alt="">
-                            <p>Mumbai</p> <img src="./src/images/voyage/gun.svg" alt="">
-                            <p>Egypt</p>
-                            <div class="tooltip2"><img src="./src/images/voyage/pinka.svg" alt="">
-                                <p>Cario, Egypt</p> <img src="./src/images/voyage/date.svg" alt="">
-                                <p>02 September, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="voyageka1__case">
-                        <img class="paint" src="./src/images/voyage/river.png" alt="">
-                        <div class="paint__marks"><img src="./src/images/voyage/star.svg" alt="">
-                            <img src="./src/images/voyage/cost.svg" alt="">
-
-                        </div>
-                        <div class="tooltip">
-                            <img src="./src/images/voyage/airplane.svg" alt="">
-                            <p>Mumbai</p> <img src="./src/images/voyage/gun.svg" alt="">
-                            <p>Egypt</p>
-                            <div class="tooltip2"><img src="./src/images/voyage/pinka.svg" alt="">
-                                <p>Cario, Egypt</p> <img src="./src/images/voyage/date.svg" alt="">
-                                <p>02 September, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="voyageka1__case">
-                        <img class="paint" src="./src/images/voyage/sunflower.png" alt="">
-                        <div class="paint__marks"><img src="./src/images/voyage/star.svg" alt="">
-                            <img src="./src/images/voyage/cost.svg" alt="">
-
-                        </div>
-                        <div class="tooltip">
-                            <img src="./src/images/voyage/airplane.svg" alt="">
-                            <p>Mumbai</p> <img src="./src/images/voyage/gun.svg" alt="">
-                            <p>Egypt</p>
-                            <div class="tooltip2"><img src="./src/images/voyage/pinka.svg" alt="">
-                                <p>Cario, Egypt</p> <img src="./src/images/voyage/date.svg" alt="">
-                                <p>02 September, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="voyageka1__case">
-                        <img class="paint" src="./src/images/voyage/canyon.png" alt="">
-                        <div class="paint__marks"><img src="./src/images/voyage/star.svg" alt="">
-                            <img src="./src/images/voyage/cost.svg" alt="">
-
-                        </div>
-                        <div class="tooltip">
-                            <img src="./src/images/voyage/airplane.svg" alt="">
-                            <p>Mumbai</p> <img src="./src/images/voyage/gun.svg" alt="">
-                            <p>Egypt</p>
-                            <div class="tooltip2"><img src="./src/images/voyage/pinka.svg" alt="">
-                                <p>Cario, Egypt</p> <img src="./src/images/voyage/date.svg" alt="">
-                                <p>02 September, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="delight">
             <div class="container">
                 <div class="pinki">
@@ -736,12 +546,31 @@
             </div>
         </div>
     </footer>
+    <div id="custom-modal" class="custom-modal">
+        <div id="modal-request" class="modal-request">
+            <div class="formka__div">
+                <input type=" text" class="formka__input" placeholder="" >
+                <label for="" class="formka__label"  >Email</label>
+            </div>
+            <div class="formka__div">
+                <input type="password" class="formka__input" placeholder="" >
+                <label for="password" class="formka__label"  > Password</label>
+            </div>
+            <button id="modal-request-submit" class="btn custom-btn modal-request__btn push-button">Send Request</button>
+            <p>We leave only once , have a courage to change your life </p>
+            <button id="request-close-btn" class="btn close-btn">X</button>
+        </div>
+        <div id="modal-thanks" class="modal-request">
+            
+                <img src="./src/images/home/newlife.gif" alt="">
+            <p> </p>
+            <button id="request-close-btn-thanks" class="btn close-btn">X</button>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./src/libs/slick/slick.min.js"></script>
-
     <script src="./src/tab.js"></script>
 </body>
-
 
 </html>

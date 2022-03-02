@@ -1,8 +1,8 @@
 .home {
     position: relative;
-background: $dark;
-background-image: url(../images/home/homebg.png ) ;
-background-size: 100% 100%;
+    background: $dark;
+    background-image: url(../images/home/homebg.png );
+    background-size: 100% 100%;
 
     // &__image {
     //     top: 0;
@@ -14,7 +14,7 @@ background-size: 100% 100%;
     //     z-index: -8;
 
     // }
-  
+
 
     &__title {
         text-align: center;
@@ -62,60 +62,75 @@ background-size: 100% 100%;
     }
 
     .tabs {
-        margin-top: 250px;
-        max-width: 1170px;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background: #fff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        border-radius: 20px;
 
-      
+
+        position: relative;
 
         &__head {
             display: flex;
             align-items: stretch;
-            column-gap: 30px;
-
+            column-gap: 20px;
         }
-
+.vacation{
+    border-radius: 50%;
+    width: 300px;height: 200px;
+}
         &__toggle {
-
+            margin-left: 30px;
+            margin-top: 100px;
+            margin-bottom: 0;
             color: $dark;
             font-family: "Segoe UI";
             font-weight: 600;
-            font-size: 25px;
+            font-size: 18px;
             color: #2A3950;
             display: flex;
-            width: 180px;
-            height: 55px;
-            align-items: center;
+            width: 150px;
+            height: 60px;
             justify-content: center;
-            background: #F3F6F6;
             cursor: pointer;
+            background: #fff;
+            // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
 
             &.is-active {
 
-                background: #fff;
-                border-radius: 16px;
+                background: #FFFFFF;
+                opacity: 0.7;
+
             }
         }
 
         &__box {
             position: relative;
+            margin-top: -45px;
+            background-color: white;
+            width: 100%;
+            min-height: 150px;
+            // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
             display: flex;
-            column-gap: 30px;
-
-
-
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 20px;
 
             .checkbox-container {
+
+                position: absolute;
+
+                left: 6%;
+                bottom: 8px;
+                column-gap: 30px;
+
                 .checkbox {
                     cursor: pointer;
                     width: 16px;
                     height: 16px;
+
+                    &:hover {
+                        color: $cyan;
+                    }
                 }
 
                 label {
@@ -125,13 +140,11 @@ background-size: 100% 100%;
                     color: #009394;
                 }
 
-                position: absolute;
-                left: 0;
-                top: 60px;
 
             }
 
             input {
+                font-family: Segoe UI;
 
                 width: 190px;
                 height: 36px;
@@ -139,10 +152,38 @@ background-size: 100% 100%;
                 border: 1px solid #2A3950;
                 border-radius: 10px;
                 padding: 10px;
+                color: $cyan;
 
                 &[type="search"]::-webkit-search-cancel-button {
                     width: 8px;
                     height: 8px;
+                    background-color: $dark;
+                }
+
+                &:hover {
+                    color: $dark;
+                    background-color: $cyan;
+                }
+            }
+
+            select {
+                width: 190px;
+                height: 36px;
+                background: #FFFFFF;
+                border: 1px solid #2A3950;
+                border-radius: 10px;
+                padding: 10px;
+                color: $cyan;
+
+                &:hover {
+                    color: $dark;
+                    background-color: $cyan;
+                }
+
+                option {
+                    font-size: 15px;
+                    color: $cyan;
+                    font-family: "Segoe UI";
                     background-color: $dark;
                 }
             }
