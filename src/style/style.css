@@ -63,52 +63,74 @@
 }
 
 .header {
+  position: relative;
+  width: 100%;
   background: #ffffff50;
 }
 
-.header h2 {
-  font-family: "Myriad Pro";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 43px;
-  color: #00ABE6;
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header h2 span {
+.header .navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .navbar__logo h2 {
+  font-family: "Myriad Pro";
+  font-weight: 600;
+  font-size: 30px;
+  color: #00ABE6;
+  cursor: pointer;
+}
+
+.header .navbar__logo h2:hover {
+  color: #00E0C7;
+}
+
+.header .navbar__logo h2 span {
   color: #2A3950;
 }
 
-.header h2 p {
+.header .navbar__logo h2 p {
   font-family: "Myriad Pro";
   font-size: 8.44538px;
   line-height: 10px;
   color: #2A3950;
 }
 
-.header__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header__logo {
+.header .navbar__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .fon {
-  width: 1100px;
-  height: 100%;
+.header .navbar__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
 }
 
-.header__right {
+.header .navbar__right_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,17 +140,7 @@
           column-gap: 30px;
 }
 
-.header__right_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-column-gap: 35px;
-          column-gap: 35px;
-}
-
-.header__right_list-item {
+.header .navbar__right_list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,19 +150,27 @@
           column-gap: 10px;
 }
 
-.header__right_list-item h2 {
+.header .navbar__right_list-item h2 {
   font-family: "Segoe UI", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
   color: #2A3950;
+  cursor: pointer;
 }
 
-.header__right_list-item p {
+.header .navbar__right_list-item h2:hover {
+  color: #00E0C7;
+}
+
+.header .navbar__right_list-item p {
   font-family: "Segoe UI";
   font-size: 12px;
-  line-height: 16px;
   color: #2A3950;
+  cursor: pointer;
+}
+
+.header .navbar__right_list-item p:hover {
+  color: #00E0C7;
 }
 
 .header .burger {
@@ -163,7 +183,7 @@
 }
 
 .header .burger.active {
-  background-color: white;
+  background-color: #00E0C7;
 }
 
 .home {
@@ -1663,24 +1683,31 @@
 }
 
 @media (max-width: 425px) {
+  .voyage {
+    display: none;
+  }
+  .packages {
+    display: none;
+  }
   .container {
     max-width: 375px;
   }
   .home {
     background-size: 100% 100%;
   }
-  .home header {
+  .home .header .navbar {
     display: none;
   }
-  .home header .header__right {
+  .home .header .navbar__right {
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .home header .burger {
-    display: block;
+  .home .header .burger {
     position: absolute;
+    display: block;
   }
   .home__title {
     margin: 0;
@@ -1696,7 +1723,6 @@
     width: 125px;
     font-size: 11px;
     margin-left: 122px;
-    margin-top: -20px;
   }
   .home .tabs {
     display: none;
@@ -1711,10 +1737,43 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .holidays .shelter .descwow {
+    width: 250px;
+  }
   .holidays .shelter__busimg .bus {
     margin-top: 0;
     width: 287px;
     height: 200px;
+  }
+  .holidays .shelter__content {
+    width: 300px;
+  }
+  .holidays .shelter__content .plane img {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    -webkit-animation: animate 3s infinite ease-in-out;
+            animation: animate 3s infinite ease-in-out;
+  }
+  @-webkit-keyframes animate {
+    from {
+      top: 25%;
+      left: 0;
+    }
+    to {
+      top: 0;
+      left: 38%;
+    }
+  }
+  @keyframes animate {
+    from {
+      top: 25%;
+      left: 0;
+    }
+    to {
+      top: 0;
+      left: 38%;
+    }
   }
   .holidays .shelter__content :nth-child(1) {
     font-size: 25px;
@@ -1731,6 +1790,9 @@
     margin: 0 auto;
     width: 100px;
     height: 30px;
+  }
+  .postcard .postcard__map {
+    display: none;
   }
   .postcard__title h2 {
     font-size: 25px;
@@ -1806,6 +1868,7 @@
   }
   .destinations {
     position: relative;
+    padding: 30px;
   }
   .destinations .textwow {
     position: absolute;
@@ -1817,12 +1880,10 @@
     display: none;
   }
   .destinations .descwow {
-    position: absolute;
     font-size: 12px;
     width: 268px;
   }
   .destinations__carusel {
-    margin-top: 22px;
     position: relative;
     width: 250px;
     height: 400px;
@@ -1895,6 +1956,9 @@
     display: none;
   }
   .delight {
+    display: none;
+  }
+  .voyage .chute {
     display: none;
   }
   .conqueror {

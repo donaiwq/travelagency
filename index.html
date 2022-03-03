@@ -5,35 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Agency</title>
     <link rel="icon" href="./src/images/header/logo.svg">
     <link rel="stylesheet" href="./src/style/style.css">
 </head>
 
 <body>
+         
     <main>
+       
         <section class="home">
             <div class="container">
-                <header class="header">
+            <header class="header">
                     <div class="container">
-                        <div class="header__row">
-                            <div class="header__logo">
+                        <div class="navbar">
+                            <div class="navbar__row">
+                            <div class="navbar__logo">
                                 <img src="./src/images/header/logo.svg" alt="logo">
                                 <h2 class="textwow">world <span>fly</span>
                                     <p class="descwow">TOURS AND TRAVELS</p>
                                 </h2>
                             </div>
 
-                            <div class="header__right">
-                                <div class="header__right_list">
-                                    <div class="header__right_list-item">
+                           
+                        </div>
+                         <div class="navbar__right">
+                                <div class="navbar__right_list">
+                                    <div class="navbar__right_list-item">
                                         <img src="./src/images/header/case.svg" alt="case">
                                         <div>
                                             <h2 class="textwow">Corporate</h2>
                                             <p class="textwow">Manage your Bussiness</p>
                                         </div>
                                     </div>
-                                    <div class="header__right_list-item">
+                                    <div class="navbar__right_list-item">
                                         <img class="agent" src="./src/images/header/agent.svg" alt="case">
                                         <div>
                                             <h2 class="textwow">Agent</h2>
@@ -43,11 +48,11 @@
                                 </div>
                                 <button id="request-btn" class="btn custom-btn push-button">SignUp</button>
                             </div>
-                        </div>
-                        <div class="burger"><span></span></div>
+                        </div>                   
+                      
                     </div>
 
-                    
+                      <div class="burger"><span></span></div>
 
                 </header>
 
@@ -576,6 +581,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./src/libs/slick/slick.min.js"></script>
     <script src="./src/tab.js"></script>
+    <script>
+          $('.voyageka').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    arrows: true,
+    responsive: [{
+        breakpoint: 600,
+        settings: {
+          
+          slidesToScroll: 1
+        }
+      },
+   
+    ]
+  });
+    </script>
 </body>
 
 </html>

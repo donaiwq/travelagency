@@ -30,35 +30,74 @@ $(document).ready(function(){
     
     autoplay: false,
     autoplaySpeed: 2000,
-    responsive: [{
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+  
   });
 
 
 
 
-$('.voyageka').slick({
+// $('.voyageka').slick({
     
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-});
+//     infinite: true,
+//     slidesToShow: 3,
+//   slidesToScroll: 3,
 
+//   responsive: [{
+//   breakpoint: 1024,
+//   settings: {
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     infinite: true,
+//     dots: true
+//   }
+// },
+// {
+//   breakpoint: 600,
+//   settings: {
+//     slidesToShow: 2,
+//     slidesToScroll: 2
+//   }
+// }
+// ]
+// }
+// );
+
+
+// $('.voyageka').slick({
+//   dots: true,
+//   infinite: true,
+//   speed: 300,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+  
+//   responsive: [
+//     {
+//       breakpoint: 1000,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         infinite: true,
+//       }
+//     },
+//     {
+//       breakpoint: 900,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//     // You can unslick at a given breakpoint now by adding:
+//     // settings: "unslick"
+//     // instead of a settings object
+//   ]
+// });
 
 
 
@@ -111,5 +150,9 @@ function addClass(selector) {
 
 
 
+const burger = document.querySelector('.burger')
+const navbar = document.querySelector('.navbar')
 
-
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active')
+})

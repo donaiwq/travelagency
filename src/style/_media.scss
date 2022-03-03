@@ -36,7 +36,7 @@
 
   }
 
- 
+
 }
 
 @media (max-width: 992px) {
@@ -51,7 +51,7 @@
     max-width: 576px;
   }
 
- 
+
 }
 
 @media (max-width: 576px) {
@@ -83,26 +83,38 @@
 }
 
 @media (max-width: 425px) {
-
+.voyage{
+  display: none;
+}
+.packages{
+  display: none;
+}
   .container {
-      max-width: 375px;
-    }
-   
-  .home { 
-  
-   header{
-
-    display: none;
-    .header__right{
-  flex-direction: column;
-}
-  .burger{
-  display: block;
-  position: absolute;
-}
+    max-width: 375px;
   }
 
-   background-size: 100% 100%;
+  .home {
+
+    .header {
+
+      .navbar {
+        display: none;
+
+       
+        &__right{
+          display: block;
+          flex-direction: column;
+        }
+      }
+
+      .burger {
+        position: absolute;
+        display: block;
+      }
+
+    }
+
+    background-size: 100% 100%;
 
     &__title {
       margin: 0;
@@ -124,7 +136,6 @@
       width: 125px;
       font-size: 11px;
       margin-left: 122px;
-      margin-top: -20px;
 
     }
 
@@ -136,7 +147,7 @@
 
 
 
-   
+
 
   }
 
@@ -145,7 +156,9 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-
+.descwow{
+  width: 250px;
+}
       &__busimg {
         .bus {
           margin-top: 0;
@@ -156,8 +169,26 @@
       }
 
       &__content {
-
-
+width: 300px;
+.plane{
+  img{
+    position: absolute;
+    width: 200px;
+  height: 150px;
+  animation: animate 3s infinite ease-in-out;
+  }
+  @keyframes animate {
+    from{
+      top: 25%;
+left: 0;
+    }
+    to{
+      top: 0;
+      left: 38%;
+    }
+  }
+  
+}
         :nth-child(1) {
           font-size: 25px;
         }
@@ -182,7 +213,9 @@
   }
 
   .postcard {
-
+.postcard__map{
+ display: none;
+}
     &__title {
       h2 {
         font-size: 25px;
@@ -277,7 +310,7 @@
 
   .destinations {
     position: relative;
-
+padding: 30px;
     .textwow {
       position: absolute;
       top: 0;
@@ -292,15 +325,12 @@
     }
 
     .descwow {
-      position: absolute;
-
       font-size: 12px;
       width: 268px;
 
     }
 
     &__carusel {
-      margin-top: 22px;
       position: relative;
       width: 250px;
       height: 400px;
@@ -391,12 +421,17 @@
     }
   }
 
-  
 
-  
+
+
 
   .delight {
     display: none;
+  }
+  .voyage{
+    .chute{
+      display: none;
+    }
   }
 
   .conqueror {
@@ -473,4 +508,5 @@
 
     }
   }
+ 
 }
