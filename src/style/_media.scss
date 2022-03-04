@@ -122,7 +122,9 @@
 
     .tabs {
       display: none;
-
+&:hover{
+  background-color: white;
+}
 
     }
 

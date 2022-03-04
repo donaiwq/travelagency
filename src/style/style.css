@@ -1756,6 +1756,9 @@
   .home .tabs {
     display: none;
   }
+  .home .tabs:hover {
+    background-color: white;
+  }
   .header {
     position: relative;
   }
