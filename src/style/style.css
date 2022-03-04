@@ -162,7 +162,7 @@
 .header .hamburger {
   position: absolute;
   top: -10px;
-  right: 2px;
+  right: 1px;
   display: none;
 }
 
@@ -454,7 +454,7 @@
 
 .holidays .shelter__busimg .bus {
   margin-top: 105px;
-  width: 570px;
+  width: 530px;
   height: 360px;
   left: 0;
   -webkit-transition: 0.2s;
@@ -473,7 +473,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  right: 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1214,7 +1213,7 @@
 
 .delight {
   background: #2A3950;
-  padding: 70px;
+  padding: 50px;
   position: relative;
 }
 
@@ -1230,7 +1229,6 @@
   top: -20%;
   left: 18%;
   position: absolute;
-  width: 100%;
   content: url("../images/delight/palmtree.png");
 }
 
@@ -2061,8 +2059,8 @@
   }
   .delight .boxy {
     width: 400px;
-    -webkit-transform: translate(-15%);
-            transform: translate(-15%);
+    -webkit-transform: translate(-9.6%);
+            transform: translate(-9.6%);
   }
   .delight .boxy__title {
     width: 340px;
