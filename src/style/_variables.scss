@@ -12,14 +12,13 @@ $dark:#2A3950;
     border: none;
     color: #fff;
     cursor: pointer;
-    transition: 0.7s;
+    transition: 0.2s;
 
     &:hover {
         font-family: DM Serif Display;
-        font-size: 15px;
         background: transparent;
         color: $dark;
-        transition: 0.7s;
+        transition: 0.2s;
 
     }
 }

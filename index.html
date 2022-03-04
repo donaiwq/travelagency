@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency</title>
     <link rel="icon" href="./src/images/header/logo.svg">
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <link rel="stylesheet" href="./src/style/style.css">
 </head>
 
@@ -19,17 +22,22 @@
             <header class="header">
                     <div class="container">
                         <div class="navbar">
-                            <div class="navbar__row">
-                            <div class="navbar__logo">
+                           
+                            <div class="navbar-logo">
                                 <img src="./src/images/header/logo.svg" alt="logo">
                                 <h2 class="textwow">world <span>fly</span>
                                     <p class="descwow">TOURS AND TRAVELS</p>
                                 </h2>
                             </div>
 
-                           
-                        </div>
-                         <div class="navbar__right">
+                           <ul class="navbar-nav">
+<li class="nav-item"><a href="">Corporate</a><br><a class="manage" href="">Manage your Bussiness</a></li>
+<li class="nav-item"><a href="">Agent</a><br><a class="manage" href="">Manage your bookings</a></li>
+ <button id="request-btn" class="btn custom-btn push-button">SignUp</button>
+
+                           </ul>
+                        
+                         <!-- <div class="navbar__right">
                                 <div class="navbar__right_list">
                                     <div class="navbar__right_list-item">
                                         <img src="./src/images/header/case.svg" alt="case">
@@ -47,19 +55,24 @@
                                     </div>
                                 </div>
                                 <button id="request-btn" class="btn custom-btn push-button">SignUp</button>
-                            </div>
+                            </div> -->
                         </div>                   
-                      
+                       
                     </div>
+                    <button class="hamburger hamburger--collapse hamburger--spring-r" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+                    </div>
+                    
 
-                      <div class="burger"><span>hioh;</span></div>
+                    
 
                 </header>
 
                 <h1 class="home__title">Explore The World <br> With Us!</h1>
-                <p class="home__desc">It is a long established fact that a reader will be distracted by the readable
-                    content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less.</p>
+                <p class="home__desc">Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.</p>
                 <div class="home__btnka"><button class="push-button btn">Explore Now</button></div>
 
                 <div class="tabs">
@@ -160,10 +173,7 @@
                         <p class="descwow">Price Started At @ $ 15.00*</p>
                         <p class="descwow">Take The Best Offers And
                             Enjoy Your Holidays!</p>
-                        <p class="descwow">It is a long established fact that a reader will be distracted by the
-                            readable content of a
-                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less.</p>
+                        <p class="descwow">Even the world's most successful individuals have experienced their fair share of setbacks and hardships. There's much to learn from their challenges as well as their success.</p>
                         
                         <div class="plane">
                             <img class="fly" src="./src/images/holidays/airplane.svg" alt="">
@@ -182,9 +192,7 @@
 
                 <div class="postcard__title">
                     <h2 class="textwow">Best Offers On Flight Booking</h2>
-                    <p class="descwow"> It is a long established fact that a reader will be distracted by the readable
-                        content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
+                    <p class="descwow"> Spread love everywhere you go. Let no one ever come to you without leaving happier.The future belongs to those who believe in the beauty of their dreams. </p>
                 </div>
                 <img class="postcard__map" src="./src/images/postcard/map.png" alt="">
                 <div class="postcard__cards">
@@ -192,8 +200,8 @@
                         <div class="card card1">
 
                             <img src="./src/images/postcard/img1.png" alt="">
-                            <h3>Contrary to popular belief.</h3>
-                            <p>Upto 50% off On Your booking...</p>
+                            <h3>New world in your hand.</h3>
+                            <p>Upto 99% off On Your booking...</p>
                             <div class="cardbtn">
                                 <button class="bookbtn">BOOK050P </button>
                                 <button class="push-button viewbtn ">View More </button>
@@ -201,8 +209,8 @@
                         </div>
                         <div class="card card2">
                             <img class="cardimg" src="./src/images/postcard/img2.png" alt="">
-                            <h3>Contrary to popular belief.</h3>
-                            <p>Upto 50% off On Your booking...</p>
+                            <h3>Take a new breathe.</h3>
+                            <p>Upto 67% off On Your booking...</p>
                             <div class="cardbtn">
                                 <button class="bookbtn">BOOK050P </button>
                                 <button class="push-button viewbtn ">View More </button>
@@ -210,8 +218,8 @@
                         </div>
                         <div class="card card3">
                             <img class="cardimg3" src="./src/images/postcard/img3.png" alt="">
-                            <h3>Contrary to popular belief.</h3>
-                            <p>Upto 50% off On Your booking...</p>
+                            <h3>Start with new step.</h3>
+                            <p>Upto 77% off On Your booking...</p>
                             <div class="cardbtn">
                                 <button class="bookbtn">BOOK050P </button>
                                 <button class="push-button viewbtn ">View More </button>
@@ -244,10 +252,7 @@
                         <div class="cardpop__desc">
                             <h3> Horseshoe bend,
                                 United States</h3>
-                            <p class="content1">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen
-                                book. It has survived not only five centuries, but</p>
+                            <p class="content1">The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction, or whether you learn from it; whether you choose to persevere The secret of success is to do the common thing uncommonly well.</p>
                             <p class="content2">By admin</p>
                             <div class="pushheart">
                                 <p class="comun">0</p>
@@ -264,14 +269,8 @@
                         <div class="destinations__carusel">
                             <div class="cardpop">
                                 <div class="cardpop__desc">
-                                    <h3> Horseshoe bend,
-                                        United States</h3>
-                                    <p class="content1">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                        1500s,
-                                        when an unknown printer took a galley of type and scrambled it to make a type
-                                        specimen
-                                        book. It has survived not only five centuries, but</p>
+                                    <h3> Chicago,Suspicious Land, Canyons</h3>
+                                    <p class="content1">The secret of success is to do the common thing uncommonly well From beautiful flowers to sunshine to rainstorms, nature’s many facets can be an excellent source of uplifting quotes. Read through several of our favorites from poets, artists, public figures, and more. And, of course.</p>
                                     <p class="content2">By admin</p>
                                     <div class="pushheart">
                                         <p class="comun">0</p>
@@ -537,7 +536,7 @@
                     </ul>
                     <ul class="navbar">
                         <li><a href="">BOOKINGSA</a></li>
-                        <li>Flights</li>rr
+                        <li>Flights</li>
                         <li>Hotels</li>
                         <li>Buses</li>
                         <li>Trains</li>
@@ -577,7 +576,7 @@
             <button id="request-close-btn-thanks" class="btn close-btn">X</button>
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./src/libs/slick/slick.min.js"></script>
     <script src="./src/tab.js"></script>

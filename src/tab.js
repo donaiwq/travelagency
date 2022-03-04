@@ -150,9 +150,11 @@ function addClass(selector) {
 
 
 
-const burger = document.querySelector('.burger')
+const burger = document.querySelector('.hamburger')
 const navbar = document.querySelector('.navbar')
 
 burger.addEventListener('click', () => {
-  burger.classList.toggle('active')
+  burger.classList.toggle('is-active')
+  navbar.classList.toggle('active')
 })
+

@@ -134,8 +134,7 @@
       }
 
       &__btn {
-          max-width: 270px;
-          width: 100%;
+          width: 270px;
       }
   }
 
@@ -146,11 +145,10 @@
       right: -35px;
       padding: 5px;
       display: flex;
-      line-height: 1;
       font-size: 1rem;
       color: $dark;
-      border-radius: 5px;
-      border-radius: 5px;
+      border-radius: 15px;
+border: none;
       &:hover{
         background-color:$dark;
         color: $cyan;

@@ -1,16 +1,58 @@
+@import url(../libs/hamburgers-master/_sass/hamburgers/hamburgers.css);
 .header {
     position: relative;
     width: 100%;
     background: #ffffff50;
 
     .navbar {
-
-
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+&.active{
+    display: flex;
+}
+        &-nav {
 
-        &__logo {
+            column-gap: 58px;
+            position: relative;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: flex-end;
+            text-align: left;
+
+            .manage {
+                font-size: 12px;
+            }
+
+            a {
+                font-family: Segoe UI;
+                font-weight: 600;
+                font-size: 16px;
+                color: #2A3950;
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    position: absolute;
+                    left: -9%;
+                    content: url('../images/header/case.svg');
+                }
+            }
+
+            &:nth-child(2) {
+                &::after {
+                    position: absolute;
+                    left: 29%;
+                    content: url('../images/header/agent.svg');
+                }
+            }
+        }
+
+        &-logo {
+            display: flex;
+            justify-content: start;
 
             h2 {
                 font-family: "Myriad Pro";
@@ -30,79 +72,19 @@
                 p {
                     font-family: "Myriad Pro";
                     font-size: 8.44538px;
-                    line-height: 10px;
                     color: #2A3950;
                 }
 
             }
         }
-
-        &__row {
-            display: flex;
-        }
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &__right {
-            display: flex;
-            justify-content: flex-end;
-            column-gap: 30px;
-
-
-            &_list {
-                display: flex;
-                align-self: center;
-                column-gap: 30px;
-
-                &-item {
-                    display: flex;
-                    align-self: center;
-                    column-gap: 10px;
-
-                    h2 {
-                        font-family: "Segoe UI", sans-serif;
-                        font-weight: 600;
-                        font-size: 18px;
-                        color: #2A3950;
-                        cursor: pointer;
-
-                        &:hover {
-                            color: $cyan;
-                        }
-                    }
-
-                    p {
-                        font-family: "Segoe UI";
-                        font-size: 12px;
-                        color: #2A3950;
-                        cursor: pointer;
-
-                        &:hover {
-                            color: $cyan;
-                        }
-                    }
-                }
-            }
-        }
-
     }
 
-
-
-
-    .burger {
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        width: 30px;
-        height: 30px;
-        background-color: $dark;
-
-        &.active {
-            background-color: $cyan;
-        }
+    .hamburger {
+      position: absolute;
+        top: -10px;
+        right: 2px;
+        display: none;
+      
     }
 
 }

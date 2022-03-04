@@ -1,5 +1,6 @@
 @import url(../libs/slick/slick.css);
 @import url(../libs/slick/slick-theme.css);
+@import url(../libs/hamburgers-master/_sass/hamburgers/hamburgers.css);
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -28,17 +29,16 @@
   border: none;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .push-button:hover {
   font-family: DM Serif Display;
-  font-size: 15px;
   background: transparent;
   color: #2A3950;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .textwow {
@@ -72,7 +72,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -81,16 +80,64 @@
           align-items: center;
 }
 
-.header .navbar__logo {
+.header .navbar.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.header .navbar__logo h2 {
+.header .navbar-nav {
+  -webkit-column-gap: 58px;
+          column-gap: 58px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: left;
+}
+
+.header .navbar-nav .manage {
+  font-size: 12px;
+}
+
+.header .navbar-nav a {
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2A3950;
+}
+
+.header .navbar-nav:nth-child(2)::before {
+  position: absolute;
+  left: -9%;
+  content: url("../images/header/case.svg");
+}
+
+.header .navbar-nav:nth-child(2)::after {
+  position: absolute;
+  left: 29%;
+  content: url("../images/header/agent.svg");
+}
+
+.header .navbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.header .navbar-logo h2 {
   font-family: "Myriad Pro";
   font-weight: 600;
   font-size: 30px;
@@ -98,92 +145,25 @@
   cursor: pointer;
 }
 
-.header .navbar__logo h2:hover {
+.header .navbar-logo h2:hover {
   color: #00E0C7;
 }
 
-.header .navbar__logo h2 span {
+.header .navbar-logo h2 span {
   color: #2A3950;
 }
 
-.header .navbar__logo h2 p {
+.header .navbar-logo h2 p {
   font-family: "Myriad Pro";
   font-size: 8.44538px;
-  line-height: 10px;
   color: #2A3950;
 }
 
-.header .navbar__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header .navbar__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-}
-
-.header .navbar__right_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-}
-
-.header .navbar__right_list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-}
-
-.header .navbar__right_list-item h2 {
-  font-family: "Segoe UI", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  color: #2A3950;
-  cursor: pointer;
-}
-
-.header .navbar__right_list-item h2:hover {
-  color: #00E0C7;
-}
-
-.header .navbar__right_list-item p {
-  font-family: "Segoe UI";
-  font-size: 12px;
-  color: #2A3950;
-  cursor: pointer;
-}
-
-.header .navbar__right_list-item p:hover {
-  color: #00E0C7;
-}
-
-.header .burger {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  width: 30px;
-  height: 30px;
-  background-color: #2A3950;
-}
-
-.header .burger.active {
-  background-color: #00E0C7;
+.header .hamburger {
+  position: absolute;
+  top: -10px;
+  right: 2px;
+  display: none;
 }
 
 .home {
@@ -264,9 +244,9 @@
 }
 
 .home .tabs .vacation {
-  border-radius: 50%;
-  width: 300px;
-  height: 200px;
+  border-radius: 40%;
+  width: 200px;
+  height: 150px;
 }
 
 .home .tabs__toggle {
@@ -1250,6 +1230,7 @@
   top: -20%;
   left: 18%;
   position: absolute;
+  width: 100%;
   content: url("../images/delight/palmtree.png");
 }
 
@@ -1610,8 +1591,7 @@
 }
 
 .custom-modal .modal-request__btn {
-  max-width: 270px;
-  width: 100%;
+  width: 270px;
 }
 
 .custom-modal .close-btn {
@@ -1622,11 +1602,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 1;
   font-size: 1rem;
   color: #2A3950;
-  border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
+  border: none;
 }
 
 .custom-modal .close-btn:hover {
@@ -1641,6 +1620,12 @@
   .home .header__row img {
     width: 40px;
     height: 40px;
+  }
+  .home .header .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .home .header .push-button {
     height: 30px;
@@ -1695,23 +1680,9 @@
   .home {
     background-size: 100% 100%;
   }
-  .home .header .navbar {
-    display: none;
-  }
-  .home .header .navbar__right {
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .home .header .burger {
-    position: absolute;
-    display: block;
-  }
   .home__title {
     margin: 0;
-    font-size: 37px;
+    font-size: 28px;
   }
   .home .push-button {
     font-size: 10px;
@@ -1726,6 +1697,69 @@
   }
   .home .tabs {
     display: none;
+  }
+  .header {
+    position: relative;
+  }
+  .header .navbar {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fafafa;
+    padding: 25px;
+    height: 250px;
+    width: 220px;
+  }
+  .header .navbar-logo {
+    font-size: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .header .navbar-logo h2 {
+    font-size: 18px;
+  }
+  .header .navbar-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .header .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .navbar-nav button {
+    margin-top: 7px;
+  }
+  .header .navbar-nav-item {
+    margin-top: -10px;
+    font-size: 16px;
+  }
+  .header .navbar-nav:nth-child(2)::before {
+    position: absolute;
+    top: 2%;
+    left: -31%;
+  }
+  .header .navbar-nav:nth-child(2)::after {
+    position: absolute;
+    left: -25%;
+    top: 42%;
+  }
+  .header .hamburger {
+    display: block;
+  }
+  .custom-modal .modal-request {
+    width: 278px;
+    height: 360px;
+  }
+  .custom-modal .modal-request P {
+    width: 235px;
+    font-size: 14px;
+  }
+  .custom-modal .modal-request__btn {
+    width: 126px;
   }
   .holidays .shelter {
     display: -webkit-box;
@@ -1747,6 +1781,9 @@
   }
   .holidays .shelter__content {
     width: 300px;
+  }
+  .holidays .shelter__content .push-button:hover {
+    background-color: #00E0C7;
   }
   .holidays .shelter__content .plane img {
     position: absolute;
@@ -1857,10 +1894,16 @@
     height: 25px;
     font-size: 8px;
   }
+  .postcard__cards .row .card .cardbtn .bookbtn:hover {
+    background-color: #fff;
+  }
   .postcard__cards .row .card .cardbtn .viewbtn {
     width: 50px;
     min-height: 25px;
     font-size: 8px;
+  }
+  .postcard__cards .row .card .cardbtn .viewbtn:hover {
+    background-color: #fff;
   }
   .postcard__cards .row .card img {
     width: 120px;
@@ -1904,7 +1947,7 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-top: 138px;
+    margin-top: 146px;
     margin-left: -39px;
   }
   .destinations__carusel .cardpop__btn img {
@@ -1924,9 +1967,9 @@
   .destinations__carusel .cardpop .desert1 {
     position: absolute;
     left: 7%;
-    margin-top: 90px;
+    margin-top: 85px;
     border-radius: 10px;
-    width: 155px;
+    width: 150px;
     height: 200px;
   }
   .destinations__carusel .cardpop__desc {
@@ -1956,7 +1999,86 @@
     display: none;
   }
   .delight {
+    position: relative;
+  }
+  .delight .pinki .dash {
+    width: 300px;
+    position: absolute;
+    left: -33px;
+  }
+  .delight .pinki::before {
     display: none;
+  }
+  .delight .pinki .car {
+    width: 100px;
+    height: 70px;
+  }
+  .delight .pinki .car img {
+    width: 200px;
+    height: 150px;
+    -webkit-animation: moveRight 3s linear infinite;
+            animation: moveRight 3s linear infinite;
+  }
+  @-webkit-keyframes moveRight {
+    from {
+      -webkit-transform: translate(55%, 20%);
+              transform: translate(55%, 20%);
+    }
+    to {
+      -webkit-transform: translate(0%, 20%);
+              transform: translate(0%, 20%);
+    }
+  }
+  @keyframes moveRight {
+    from {
+      -webkit-transform: translate(55%, 20%);
+              transform: translate(55%, 20%);
+    }
+    to {
+      -webkit-transform: translate(0%, 20%);
+              transform: translate(0%, 20%);
+    }
+  }
+  .delight .pinki .pin1 {
+    position: absolute;
+    top: -15px;
+    right: 2px;
+  }
+  .delight .pinki .pin2 {
+    position: absolute;
+    top: -15px;
+    left: -340px;
+  }
+  .delight .pinki::before {
+    width: 250px;
+  }
+  .delight .descwow {
+    font-size: 15px;
+  }
+  .delight .textwow {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+  .delight .boxy {
+    width: 400px;
+    -webkit-transform: translate(-15%);
+            transform: translate(-15%);
+  }
+  .delight .boxy__title {
+    width: 340px;
+  }
+  .delight .boxy .search {
+    text-align: center;
+  }
+  .delight .boxy .search__btn {
+    top: 15px;
+    right: 27px;
+    width: 70px;
+    height: 30px;
+  }
+  .delight .boxy .search input {
+    width: 300px;
+    height: 70px;
   }
   .voyage .chute {
     display: none;
