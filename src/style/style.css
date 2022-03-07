@@ -1667,23 +1667,14 @@
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 992px;
+    max-width: 999px;
   }
-  .packages {
-    display: none;
-  }
-  .packages {
-    display: none;
+  .home {
+    width: 100%;
   }
   .home .header__row img {
     width: 40px;
     height: 40px;
-  }
-  .home .header .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .home .header .push-button {
     height: 30px;
@@ -1701,6 +1692,31 @@
   }
   .home .tabs__box input {
     width: 165px;
+  }
+  .voyage .chute {
+    width: 1185px;
+  }
+  .voyage .voyageka .slick-next {
+    -webkit-transform: translate(-7%, 12%);
+            transform: translate(-7%, 12%);
+  }
+  .delight .boxy {
+    -webkit-transform: translate(3%);
+            transform: translate(3%);
+  }
+  .delight .pinki::before {
+    left: 13%;
+  }
+  .delight .pinki .pin2 {
+    -webkit-transform: translate(638%, 75%);
+            transform: translate(638%, 75%);
+  }
+  .delight .pinki .dash {
+    -webkit-transform: translate(15%, 27%);
+            transform: translate(15%, 27%);
+  }
+  .packages .travelcard .slick-prev {
+    margin-left: 834px;
   }
 }
 

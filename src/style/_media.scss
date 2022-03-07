@@ -1,18 +1,12 @@
 @media (max-width:1200px) {
   .container {
-    max-width: 992px;
+    max-width: 999px;
   }
 
-  .packages {
-    display: none;
-  }
 
-  .packages {
-    display: none;
-  }
 
   .home {
-
+width: 100%;
     .header {
       &__row {
         img {
@@ -21,9 +15,7 @@
         }
       }
 
-      .navbar {
-        flex-direction: column;
-      }
+      
 
       .push-button {
         height: 30px;
@@ -47,8 +39,42 @@
     }
 
   }
+.voyage{
+  .chute{
+    width: 1185px;
+  }
+.voyageka {
+  .slick-next{
+    transform: translate(-7%, 12%);
+  }
+}
+
+}
 
 
+.delight{
+  .boxy{
+    transform: translate(3%);
+  }
+  .pinki::before{
+    left: 13%;
+  }
+  .pinki{
+    .pin2 {
+      transform: translate(638%,75%);
+    }
+    .dash{
+      transform: translate(15%,27%);
+    }
+  } 
+}
+.packages {
+  .travelcard {
+.slick-prev{
+margin-left: 834px;
+}
+  }
+}
 }
 
 @media (max-width: 992px) {
