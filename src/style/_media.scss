@@ -6,7 +6,8 @@
 
 
   .home {
-width: 100%;
+    width: 100%;
+
     .header {
       &__row {
         img {
@@ -15,7 +16,7 @@ width: 100%;
         }
       }
 
-      
+
 
       .push-button {
         height: 30px;
@@ -39,42 +40,48 @@ width: 100%;
     }
 
   }
-.voyage{
-  .chute{
-    width: 1185px;
-  }
-.voyageka {
-  .slick-next{
-    transform: translate(-7%, 12%);
-  }
-}
 
-}
-
-
-.delight{
-  .boxy{
-    transform: translate(3%);
-  }
-  .pinki::before{
-    left: 13%;
-  }
-  .pinki{
-    .pin2 {
-      transform: translate(638%,75%);
+  .voyage {
+    .chute {
+      width: 1185px;
     }
-    .dash{
-      transform: translate(15%,27%);
+
+    .voyageka {
+      .slick-next {
+        transform: translate(-7%, 12%);
+      }
     }
-  } 
-}
-.packages {
-  .travelcard {
-.slick-prev{
-margin-left: 834px;
-}
+
   }
-}
+
+
+  .delight {
+    .boxy {
+      transform: translate(3%);
+    }
+
+    .pinki::before {
+      left: 13%;
+    }
+
+    .pinki {
+      .pin2 {
+        transform: translate(638%, 75%);
+      }
+
+      .dash {
+        transform: translate(15%, 27%);
+      }
+    }
+  }
+
+  .packages {
+    .travelcard {
+      .slick-prev {
+        margin-left: 834px;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -109,9 +116,7 @@ margin-left: 834px;
     display: none;
   }
 
-  .packages {
-    display: none;
-  }
+
 
   .container {
     max-width: 375px;
@@ -148,9 +153,10 @@ margin-left: 834px;
 
     .tabs {
       display: none;
-&:hover{
-  background-color: white;
-}
+
+      &:hover {
+        background-color: white;
+      }
 
     }
 
@@ -252,9 +258,7 @@ margin-left: 834px;
       justify-content: center;
       flex-wrap: wrap;
 
-      .descwow {
-        // width: 250px;
-      }
+
 
       &__busimg {
         .bus {
@@ -539,10 +543,6 @@ margin-left: 834px;
     }
   }
 
-
-
-
-
   .delight {
     position: relative;
 
@@ -720,6 +720,33 @@ margin-left: 834px;
 
     }
   }
+}
 
+@media (max-width: 375px) {
+  .container {
+    max-width: 325px;
+  }
 
+  .home {
+    background-size: 155% 100%;
+
+    &__title {
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    &__desc {
+      font-size: 12px;
+      width: 135px;
+    }
+
+    &__btnka {
+      padding-bottom: 20px;
+
+      .btn {
+        margin-top: -15px;
+        font-size: 8px;
+      }
+    }
+  }
 }

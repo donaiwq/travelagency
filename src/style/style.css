@@ -1745,9 +1745,6 @@
   .voyage {
     display: none;
   }
-  .packages {
-    display: none;
-  }
   .container {
     max-width: 375px;
   }
@@ -2221,6 +2218,30 @@
   }
   .conqueror .totally .allright p {
     text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 325px;
+  }
+  .home {
+    background-size: 155% 100%;
+  }
+  .home__title {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .home__desc {
+    font-size: 12px;
+    width: 135px;
+  }
+  .home__btnka {
+    padding-bottom: 20px;
+  }
+  .home__btnka .btn {
+    margin-top: -15px;
+    font-size: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,67 +1,71 @@
-let tabs = document.querySelectorAll('.tabs__toggle'),
-    contents = document.querySelectorAll('.tabs__content');
+let tabs = document.querySelectorAll(".tabs__toggle"),
+  contents = document.querySelectorAll(".tabs__content")
 
 tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-        contents.forEach((content) => {
-            content.classList.remove('is-active');
-        });
-        tabs.forEach((tab) => {
-            tab.classList.remove('is-active');
-        });
+  tab.addEventListener("click", () => {
+    contents.forEach((content) => {
+      content.classList.remove("is-active")
+    })
+    tabs.forEach((tab) => {
+      tab.classList.remove("is-active")
+    })
 
-        contents[index].classList.add('is-active');
-        tabs[index].classList.add('is-active');
-    });
-});
+    contents[index].classList.add("is-active")
+    tabs[index].classList.add("is-active")
+  })
+})
 
+$(document).ready(function () {
+  $(".destinations__carusel").slick({
+    arrows: true,
+  })
+})
 
-$(document).ready(function(){
-    $('.destinations__carusel').slick({
-       arrows:true
-    });
-  });
+$(".travelcard").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
 
-
-
-  $('.travelcard').slick({
-    slidesToShow: 3,
-      slidesToScroll: 1,
-    
-    autoplay: false,
-    autoplaySpeed: 2000,
-  
-  });
-
-
-
+  autoplay: false,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
+})
 
 // $('.voyageka').slick({
-    
+
 //     infinite: true,
 //     slidesToShow: 3,
 //   slidesToScroll: 3,
 
-//   responsive: [{
-//   breakpoint: 1024,
-//   settings: {
-//     slidesToShow: 3,
-//     slidesToScroll: 3,
-//     infinite: true,
-//     dots: true
-//   }
-// },
-// {
-//   breakpoint: 600,
-//   settings: {
-//     slidesToShow: 2,
-//     slidesToScroll: 2
-//   }
-// }
-// ]
+//
 // }
 // );
-
 
 // $('.voyageka').slick({
 //   dots: true,
@@ -69,7 +73,7 @@ $(document).ready(function(){
 //   speed: 300,
 //   slidesToShow: 3,
 //   slidesToScroll: 1,
-  
+
 //   responsive: [
 //     {
 //       breakpoint: 1000,
@@ -99,32 +103,27 @@ $(document).ready(function(){
 //   ]
 // });
 
+const requestBtn = document.querySelector("#request-btn")
 
+const modal = document.querySelector("#custom-modal")
 
+const modalRequest = document.querySelector("#modal-request")
+const requestCloseBtn = document.querySelector("#request-close-btn")
+const submitBtn = document.querySelector("#modal-request-submit")
 
+const modalThanks = document.querySelector("#modal-thanks")
+const thanksCloseBtn = document.querySelector("#request-close-btn-thanks")
 
-const requestBtn = document.querySelector('#request-btn')
-
-const modal = document.querySelector('#custom-modal')
-
-const modalRequest = document.querySelector('#modal-request')
-const requestCloseBtn = document.querySelector('#request-close-btn')
-const submitBtn = document.querySelector('#modal-request-submit')
-
-const modalThanks = document.querySelector('#modal-thanks')
-const thanksCloseBtn = document.querySelector('#request-close-btn-thanks')
-
-
-requestBtn.addEventListener('click', () => {
+requestBtn.addEventListener("click", () => {
   addClass(modal)
   addClass(modalRequest)
 })
 
-requestCloseBtn.addEventListener('click', () => {
+requestCloseBtn.addEventListener("click", () => {
   removeClass(modal)
 })
 
-submitBtn.addEventListener('click', () => {
+submitBtn.addEventListener("click", () => {
   removeClass(modalRequest)
   addClass(modalThanks)
   setTimeout(() => {
@@ -133,28 +132,24 @@ submitBtn.addEventListener('click', () => {
   }, 5000)
 })
 
-thanksCloseBtn.addEventListener('click', () => {
+thanksCloseBtn.addEventListener("click", () => {
   removeClass(modalThanks)
   removeClass(modal)
   removeClass(modalRequest)
 })
 
-
 function removeClass(selector) {
-  selector.classList.remove('active')
+  selector.classList.remove("active")
 }
 
 function addClass(selector) {
-  selector.classList.add('active')
+  selector.classList.add("active")
 }
 
+const burger = document.querySelector(".hamburger")
+const navbar = document.querySelector(".navbar")
 
-
-const burger = document.querySelector('.hamburger')
-const navbar = document.querySelector('.navbar')
-
-burger.addEventListener('click', () => {
-  burger.classList.toggle('is-active')
-  navbar.classList.toggle('active')
+burger.addEventListener("click", () => {
+  burger.classList.toggle("is-active")
+  navbar.classList.toggle("active")
 })
-
