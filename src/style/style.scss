@@ -1,13 +1,21 @@
 @import url(../libs/slick/slick.css);
 @import url(../libs/slick/slick-theme.css);
 
-* {
+*,
+::before,
+::after {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
     scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -16,8 +24,11 @@
     margin: 0 auto;
 }
 
+// section {
+//     overflow: hidden;
+// }
 
-@import"./variables";
+@import "./variables";
 @import "./header";
 @import "./home";
 @import './hoildays';

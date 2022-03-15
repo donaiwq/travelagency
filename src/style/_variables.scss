@@ -1,47 +1,44 @@
-$cyan:#00E0C7;
-$dark:#2A3950;
+$cyan: #00e0c7;
+$dark: #2a3950;
 
 .push-button {
-    background: #2A3950;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 150px;
-    min-height: 40px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s;
+	background: #2a3950;
+	border: 2px solid #ffffff;
+	box-sizing: border-box;
+	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	width: 150px;
+	min-height: 40px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.2s;
 
-    &:hover {
-        font-family: DM Serif Display;
-        background: transparent;
-        color: $dark;
-        transition: 0.2s;
-
-    }
+	&:hover {
+		font-family: DM Serif Display;
+		background: transparent;
+		color: $dark;
+		transition: 0.2s;
+	}
 }
 
 .textwow {
-    font-family: DM Serif Display;
-    font-size: 62px;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
+	font-family: DM Serif Display;
+	font-size: 62px;
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.15);
 
-    &:hover {
-        color: $cyan;
-
-
-    }
+	&:hover {
+		color: $cyan;
+	}
 }
 
 .descwow {
-    font-family: Segoe UI;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.7;
+	font-family: Segoe UI;
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+	color: #ffffff;
+	opacity: 0.7;
 }

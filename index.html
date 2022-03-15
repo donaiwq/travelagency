@@ -12,110 +12,110 @@
 </head>
 
 <body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-logo">
+          <img src="./src/images/header/logo.svg" alt="logo">
+          <h2 class="textwow">world <span>fly</span>
+            <p class="descwow">TOURS AND TRAVELS</p>
+          </h2>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="">Corporate</a><br><a class="manage" href="">Manage your
+              Bussiness</a></li>
+          <li class="nav-item"><a href="">Agent</a><br><a class="manage" href="">Manage your
+              bookings</a></li>
+          <button id="request-btn" class="btn custom-btn push-button">SignUp</button>
+        </ul>
+      </div>
+      <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </header>
   <main>
     <section class="home">
       <div class="container">
-        <header id="header" class="header">
-          <div class="container">
-            <div class="navbar">
-              <div class="navbar-logo">
-                <img src="./src/images/header/logo.svg" alt="logo">
-                <h2 class="textwow">world <span>fly</span>
-                  <p class="descwow">TOURS AND TRAVELS</p>
-                </h2>
-              </div>
-              <ul class="navbar-nav">
-                <li class="nav-item"><a href="">Corporate</a><br><a class="manage" href="">Manage your
-                    Bussiness</a></li>
-                <li class="nav-item"><a href="">Agent</a><br><a class="manage" href="">Manage your
-                    bookings</a></li>
-                <button id="request-btn" class="btn custom-btn push-button">SignUp</button>
-              </ul>
+        <h1 class="home__title">Explore The World <br> With Us!</h1>
+        <p class="home__desc">Your time is limited, so don't waste it living someone else's life. Don't be trapped
+          by dogma – which is living with the results of other people's thinking.</p>
+        <div class="home__btnka"><a href="#holidays"><button class="push-button btn">Explore Now</button></a></div>
+        <div class="tabs">
+          <div class="tabs__head">
+            <span class="tabs__toggle is-active">One Way</span>
+            <span class="tabs__toggle baggr-color">Round Trip</span>
+            <span class="tabs__toggle baggr-color">Multi City</span>
+          </div>
+          <div class="tabs__body">
+            <div class="tabs__content is-active">
+              <form class="tabs__box" action="">
+                <div class="tabs__travel">
+                  <p>From</p>
+                  <input type="search" placeholder="Go Ahead">
+                </div>
+                <div class="travel">
+                  <p>To</p>
+                  <input type="date">
+                </div>
+                <div class="travel">
+                  <p>Departure</p>
+                  <input type="week">
+                </div>
+                <div class="travel">
+                  <p>LAND</p>
+                  <select name="dona">
+                    <option value="country">New Zeland</option>
+                    <option value="Asia">China</option>
+                    <option value="">Scotland</option>
+                    <option value="">Switzerland</option>
+                  </select>
+                </div>
+                <div class="travel">
+                  <div class="btn"><button class="push-button">Search now</button></div>
+                </div>
+
+                <div class="checkbox-container">
+                  <input class="checkbox" type="checkbox" id="cb1">
+                  <label for="cb1">Non Stop Flights</label>
+                </div>
+              </form>
             </div>
-            <button class="hamburger hamburger--collapse" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-          </div>
-        </header>
-      </div>
-      <h1 class="home__title">Explore The World <br> With Us!</h1>
-      <p class="home__desc">Your time is limited, so don't waste it living someone else's life. Don't be trapped
-        by dogma – which is living with the results of other people's thinking.</p>
-      <div class="home__btnka"><a href="#holidays"><button class="push-button btn">Explore Now</button></a></div>
-      <div class="tabs">
-        <div class="tabs__head">
-          <span class="tabs__toggle is-active">One Way</span>
-          <span class="tabs__toggle baggr-color">Round Trip</span>
-          <span class="tabs__toggle baggr-color">Multi City</span>
-        </div>
-        <div class="tabs__body">
-          <div class="tabs__content is-active">
-            <form class="tabs__box" action="">
-              <div class="tabs__travel">
-                <p>From</p>
-                <input type="search" placeholder="Go Ahead">
-              </div>
-              <div class="travel">
-                <p>To</p>
-                <input type="date">
-              </div>
-              <div class="travel">
-                <p>Departure</p>
-                <input type="week">
-              </div>
-              <div class="travel">
-                <p>LAND</p>
-                <select name="dona">
-                  <option value="country">New Zeland</option>
-                  <option value="Asia">China</option>
-                  <option value="">Scotland</option>
-                  <option value="">Switzerland</option>
-                </select>
-              </div>
-              <div class="travel">
-                <div class="btn"><button class="push-button">Search now</button></div>
-              </div>
-              
-              <div class="checkbox-container">
-                <input class="checkbox" type="checkbox" id="cb1">
-                <label for="cb1">Non Stop Flights</label>
-              </div>
-            </form>
-          </div>
-          <div class="tabs__content">
-            <form class="tabs__box" action="">
-              <div class="tabs__travel">
-                <p>WEEKEND </p>
-                <input type="search">
-              </div>
-              <div class="travel">
-                <p>HOLIDAY</p>
-                <input type="search">
-              </div>
-              <div class="travel">
-                <p>VACATION</p>
-                <input type="search">
-              </div>
-              <div class="travel">
-                <p>ADVENTURES</p>
-                <input type="search">
-              </div>
-              <div class="travel">
-                <div class="btn"><button class="push-button">Search now</button></div>
-              </div>
-              <div class="checkbox-container">
-                <input class="checkbox" type="checkbox" id="cb1">
-                <label for="cb1">Non Stop Flights</label>
-              </div>
-            </form>
-            <p class="tabs__text"></p>
-          </div>
-          <div class="tabs__content">
-            <form class="tabs__box" action="">
-              <img class="vacation" src="./src/images/home/vacation.gif" alt="">
-            </form>
+            <div class="tabs__content">
+              <form class="tabs__box" action="">
+                <div class="tabs__travel">
+                  <p>WEEKEND </p>
+                  <input type="search">
+                </div>
+                <div class="travel">
+                  <p>HOLIDAY</p>
+                  <input type="search">
+                </div>
+                <div class="travel">
+                  <p>VACATION</p>
+                  <input type="search">
+                </div>
+                <div class="travel">
+                  <p>ADVENTURES</p>
+                  <input type="search">
+                </div>
+                <div class="travel">
+                  <div class="btn"><button class="push-button">Search now</button></div>
+                </div>
+                <div class="checkbox-container">
+                  <input class="checkbox" type="checkbox" id="cb1">
+                  <label for="cb1">Non Stop Flights</label>
+                </div>
+              </form>
+              <p class="tabs__text"></p>
+            </div>
+            <div class="tabs__content">
+              <form class="tabs__box" action="">
+                <img class="vacation" src="./src/images/home/vacation.gif" alt="">
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -148,7 +148,6 @@
     </section>
     <section class="postcard" id="postcard">
       <div class="container">
-
         <div class="postcard__title">
           <h2 class="textwow">Best Offers On Flight Booking</h2>
           <p class="descwow"> Spread love everywhere you go. Let no one ever come to you without leaving
@@ -158,7 +157,6 @@
         <div class="postcard__cards">
           <div class="row">
             <div class="card card1">
-
               <img src="./src/images/postcard/img1.png" alt="">
               <h3>New world in your hand.</h3>
               <p>Upto 99% off On Your booking...</p>
@@ -206,7 +204,6 @@
             <p class="descwow">It is a long established fact that a reader will be distracted by the
               readable content of a page when looking at its layout.</p>
         </div>
-
         <div class="destinations__carusel">
           <div class="cardpop">
             <div class="cardpop__desc">
@@ -226,38 +223,27 @@
                 <button class="push-button click"> View More</button>
               </div>
             </div>
-
           </div>
-          <div class="flashcards">
-            <div class="destinations__carusel">
-              <div class="cardpop">
-                <div class="cardpop__desc">
-                  <h3> Chicago,Suspicious Land, Canyons</h3>
-                  <p class="content1">The secret of success is to do the common thing uncommonly well
-                    From beautiful flowers to sunshine to rainstorms, nature’s many facets can be an
-                    excellent source of uplifting quotes. Read through several of our favorites from
-                    poets, artists, public figures, and more. And, of course.</p>
-                  <p class="content2">By admin</p>
-                  <div class="pushheart">
-                    <p class="comun">0</p>
-                    <p class="heart">2</p>
-                  </div>
-                  <img class="desert1" src="./src/images/destinations/canyonka.jpg" alt="">
-                  <div class="cardpop__btn"><img src="./src/images/destinations/share.svg" alt="">
-                    <button class="push-button click"> View More</button>
-                  </div>
-                </div>
-
+          <div class="cardpop">
+            <div class="cardpop__desc">
+              <h3> Chicago,Suspicious Land, Canyons</h3>
+              <p class="content1">The secret of success is to do the common thing uncommonly well
+                From beautiful flowers to sunshine to rainstorms, nature’s many facets can be an
+                excellent source of uplifting quotes. Read through several of our favorites from
+                poets, artists, public figures, and more. And, of course.</p>
+              <p class="content2">By admin</p>
+              <div class="pushheart">
+                <p class="comun">0</p>
+                <p class="heart">2</p>
               </div>
-
+              <img class="desert1" src="./src/images/destinations/canyonka.jpg" alt="">
+              <div class="cardpop__btn"><img src="./src/images/destinations/share.svg" alt="">
+                <button class="push-button click"> View More</button>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
-
-
     </section>
     <section class="packages">
       <div class="container">
@@ -268,68 +254,44 @@
           galley of type and scrambled it to make a type specimen book.</p>
         <div class="travelcard">
           <div class="travelcard__box">
-            <div class="bridge">
-              <img src="./src/images/packagaes/bigben.png" alt="">
-              <div class="bridgetext">
-                <h4>Enjoy the beauty of the
-                  Rialto Bridge</h4>
-                <div class="loc">
-                  <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
-                  <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
-                  <button class=" bigbenbtn push-button">View Details</button>
-                </div>
-              </div>
-
+            <img src="./src/images/packagaes/bigben.png" alt="">
+            <h4 class="bridgetext">Enjoy the beauty of the
+              Rialto Bridge</h4>
+            <div class="loc">
+              <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
+              <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
+              <button class=" bigbenbtn push-button">View Details</button>
             </div>
-
           </div>
           <div class="travelcard__box">
-            <div class="bridge">
-              <img src="./src/images/packagaes/coast.png" alt="">
-              <div class="bridgetext">
-                <h4>Enjoy the beauty of the
-                  Rialto Bridge</h4>
-                <div class="loc">
-                  <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
-                  <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
-                  <button class=" bigbenbtn push-button">View Details</button>
-                </div>
-              </div>
-
+            <img src="./src/images/packagaes/coast.png" alt="">
+            <h4 class="bridgetext">Enjoy the beauty of the
+              Rialto Bridge</h4>
+            <div class="loc">
+              <p><img src="./src/images/packagaes/ident.svg" alt=""> location</p>
+              <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
+              <button class=" bigbenbtn push-button">View Details</button>
             </div>
-
           </div>
           <div class="travelcard__box">
-            <div class="bridge">
-              <img src="./src/images/packagaes/switzerland.png" alt="">
-              <div class="bridgetext">
-                <h4>Enjoy the beauty of the
-                  Rialto Bridge</h4>
-                <div class="loc">
-                  <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
-                  <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
-                  <button class=" bigbenbtn push-button">View Details</button>
-                </div>
-              </div>
-
+            <img src="./src/images/packagaes/switzerland.png" alt="">
+            <h4 class="bridgetext">Enjoy the beauty of the
+              Rialto Bridge</h4>
+            <div class="loc">
+              <p><img src="./src/images/packagaes/ident.svg" alt=""> location</p>
+              <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
+              <button class=" bigbenbtn push-button">View Details</button>
             </div>
-
           </div>
           <div class="travelcard__box">
-            <div class="bridge">
-              <img src="./src/images/packagaes/paris.png" alt="">
-              <div class="bridgetext">
-                <h4>Enjoy the beauty of the
-                  Rialto Bridge</h4>
-                <div class="loc">
-                  <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
-                  <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
-                  <button class=" bigbenbtn push-button">View Details</button>
-                </div>
-              </div>
-
+            <img src="./src/images/packagaes/paris.png" alt="">
+            <h4 class="bridgetext">Enjoy the beauty of the
+              Rialto Bridge</h4>
+            <div class="loc">
+              <p> <img src="./src/images/packagaes/ident.svg" alt=""> location</p>
+              <p><img src="./src/images/packagaes/sun.svg" alt=""> 7D/8N</p>
+              <button class=" bigbenbtn push-button">View Details</button>
             </div>
-
           </div>
         </div>
       </div>
@@ -347,7 +309,6 @@
             <img class="paint" src="./src/images/voyage/town.png" alt="">
             <div class="paint__marks"><img src="./src/images/voyage/star.svg" alt="">
               <img src="./src/images/voyage/cost.svg" alt="">
-
             </div>
             <div class="tooltip">
               <img src="./src/images/voyage/airplane.svg" alt="">
@@ -361,9 +322,9 @@
           </div>
           <div class="voyageka__case">
             <img class="paint" src="./src/images/voyage/waterfall.png" alt="">
-            <div class="paint__marks"><img src="./src/images/voyage/star.svg" alt="">
+            <div class="paint__marks">
+              <img src="./src/images/voyage/star.svg" alt="">
               <img src="./src/images/voyage/cost.svg" alt="">
-
             </div>
             <div class="tooltip">
               <img src="./src/images/voyage/airplane.svg" alt="">
@@ -407,7 +368,6 @@
               </div>
             </div>
           </div>
-
           <div class="voyageka__case">
             <img class="paint" src="./src/images/voyage/sunflower.png" alt="">
             <div class="paint__marks"><img src="./src/images/voyage/star.svg" alt="">
@@ -546,24 +506,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./src/libs/slick/slick.min.js"></script>
   <script src="./src/tab.js"></script>
-  <script>
-    $('.voyageka').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots: true,
-      arrows: true,
-      responsive: [{
-          breakpoint: 600,
-          settings: {
-
-            slidesToScroll: 1
-          }
-        },
-
-      ]
-    });
-  </script>
+  <script src="./src/js/app.js"></script>
 </body>
 
 </html>

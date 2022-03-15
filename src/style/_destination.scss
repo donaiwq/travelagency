@@ -1,202 +1,223 @@
 .destinations {
-  position: relative;
-  background-color: $dark;
-  padding: 50px;
+	position: relative;
+	background-color: $dark;
+	padding: 50px;
 
-  &__textbox {
+	&__textbox {
+		position: relative;
 
-    position: relative;
+		p {
+			margin: 0 auto;
+			width: 850px;
+		}
 
-    p {
-      margin: 0 auto;
-      width: 850px;
-    }
+		padding: 30px;
 
-    padding: 30px;
+		&::before {
+			position: absolute;
+			width: 50px;
+			height: 20px;
+			top: -15%;
+			left: 38%;
+			content: url('../images/destinations/plane.svg');
+			animation: animate 10s infinite ease-in-out;
+		}
 
-    &::before {
-      position: absolute;
-      width: 50px;
-      height: 20px;
-      top: -15%;
-      left: 38%;
-      content: url("../images/destinations/plane.svg");
-      animation: animate 10s infinite ease-in-out;
-    }
+		@keyframes animate {
+			from {
+				transform: rotate(30deg);
+				left: 0;
+				top: -15%;
+			}
 
-    @keyframes animate {
-      from {
-        transform: rotate(30deg);
-        left: 0;
-        top: -15%;
-      }
+			to {
+				transform: rotate(180deg);
+				left: 87%;
+				top: 15%;
+			}
+		}
 
-      to {
-        transform: rotate(180deg);
-        left: 87%;
-        top: 15%;
-      }
-    }
+		&::after {
+			position: absolute;
+			top: 55%;
+			left: -6%;
+			content: url('../images/destinations/journey.svg');
+		}
+	}
 
-    &::after {
-      position: absolute;
-      top: 55%;
-      left: -6%;
-      content: url("../images/destinations/journey.svg");
-    }
-  }
+	&__carusel {
+		// position: relative;
+		h3 {
+			text-align: center;
+		}
 
-  &__carusel {
+		margin: 0 auto;
+		width: 850px;
+		height: 500px;
+		background: #ffffff;
+		box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
+		border-radius: 50px;
 
-    // position: relative;
-    h3 {
-      text-align: center;
-    }
+		.slick-list {
+			border-radius: 50px;
+			overflow: hidden;
+		}
 
-    margin: 0 auto;
-    width: 850px;
-    height: 500px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
-    border-radius: 50px;
+		.cardpop {
+			position: relative;
 
+			.desert {
+				position: absolute;
+				right: 0;
+				width: 300px;
+			}
 
-    .cardpop {
-      position: relative;
+			.desert1 {
+				display: flex;
+				top: 5%;
+				position: absolute;
+				right: 2%;
+				width: 290px;
+				border-radius: 10px;
+				box-sizing: border-box;
+				box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+				border-radius: 40px;
+			}
 
-      .desert {
+			&__desc {
+				margin-left: 30px;
+				display: flex;
+				margin-top: 30px;
+				// text-align: center;
+				row-gap: 10px;
+				width: 400px;
+				flex-wrap: wrap;
 
-        position: absolute;
-        right: 0;
-        width: 300px;
-      }
+				.pushheart {
+					position: relative;
+					margin-left: 180px;
+					display: flex;
+					column-gap: 90px;
 
-      .desert1 {
-        display: flex;
-        top: 5%;
-        position: absolute;
-        right: 2%;
-        width: 290px;
-        border-radius: 10px;
-        box-sizing: border-box;
-        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-        border-radius: 40px;
-      }
+					.comun {
+						&::before {
+							top: -8px;
+							left: -40px;
+							position: absolute;
+							content: url('../images/destinations/comun.svg');
+						}
 
-      &__desc {
+						&::after {
+							content: '';
+							position: absolute;
+							width: 50px;
+							height: 0px;
+							border: 1px solid #636668;
+							transform: rotate(90deg);
+						}
+					}
 
-        margin-left: 30px;
-        display: flex;
-        margin-top: 30px;
-        // text-align: center;
-        row-gap: 10px;
-        width: 400px;
-        flex-wrap: wrap;
+					.heart::before {
+						position: absolute;
+						top: -8px;
+						left: 53px;
+						content: url('../images/destinations/heart.svg');
+						animation: heart 1s infinite linear;
+						// animation-timing-function: revert;
+						animation-timing-function: unset;
+					}
 
-        .pushheart {
-          position: relative;
-          margin-left: 180px;
-          display: flex;
-          column-gap: 90px;
+					@keyframes heart {
+						0% {
+							transform: scale(1);
+						}
 
-          .comun {
-            &::before {
-              top: -8px;
-              left: -40px;
-              position: absolute;
-              content: url('../images/destinations/comun.svg');
-            }
+						25% {
+							transform: scale(0.97);
+						}
 
-            &::after {
-              content: '';
-              position: absolute;
-              width: 50px;
-              height: 0px;
-              border: 1px solid #636668;
-              transform: rotate(90deg);
-            }
-          }
+						35% {
+							transform: scale(0.9);
+						}
 
-          .heart::before {
-            position: absolute;
-            top: -8px;
-            left: 53px;
-            content: url('../images/destinations/heart.svg');
-            animation: heart 1s infinite linear;
-            // animation-timing-function: revert;
-            animation-timing-function: unset;
-          }
+						45% {
+							transform: scale(1.1);
+						}
 
-          @keyframes heart {
-            0% {transform: scale(1);}
-            25% {transform: scale(.97);}
-            35% {transform: scale(.9);}
-            45% {transform: scale(1.1);}
-            55% {transform: scale(.9);}
-            65% {transform: scale(1.1);}
-            75% {transform: scale(1.03);}
-            100% {transform: scale(1);}
-          }
-        }
+						55% {
+							transform: scale(0.9);
+						}
 
-        h3 {
-          font-family: Segoe UI;
-          font-weight: 600;
-          font-size: 40px;
-          line-height: 60px;
-          color: #222222;
-          margin-bottom: 20px;
-        }
+						65% {
+							transform: scale(1.1);
+						}
 
-        .content1 {
-          position: relative;
-          font-family: Segoe UI;
-          font-weight: 600;
-          font-size: 18px;
-          color: #636668;
-          margin-bottom: 20px;
-          text-align: left;
+						75% {
+							transform: scale(1.03);
+						}
 
-          &::before {
-            position: absolute;
-            top: -143px;
-            left: 0;
-            content: url("../images/destinations/hook.svg");
-            width: 15px;
-            height: 15px;
-          }
-        }
+						100% {
+							transform: scale(1);
+						}
+					}
+				}
 
-        .content2 {
-          margin-top: -10px;
+				h3 {
+					font-family: Segoe UI;
+					font-weight: 600;
+					font-size: 40px;
+					line-height: 60px;
+					color: #222222;
+					margin-bottom: 20px;
+				}
 
-          font-family: Segoe UI;
-          text-align: center;
-          font-weight: 600;
-          font-size: 24px;
-          color: #636668;
-        }
+				.content1 {
+					position: relative;
+					font-family: Segoe UI;
+					font-weight: 600;
+					font-size: 18px;
+					color: #636668;
+					margin-bottom: 20px;
+					text-align: left;
 
-      }
+					&::before {
+						position: absolute;
+						top: -143px;
+						left: 0;
+						content: url('../images/destinations/hook.svg');
+						width: 15px;
+						height: 15px;
+					}
+				}
 
-      &__btn {
-        display: flex;
-        column-gap: 30px;
-        transform: translate(40%);
-        margin-top: 20px;
+				.content2 {
+					margin-top: -10px;
 
-        img {
-          width: 45px;
-          height: 45px;
-        }
+					font-family: Segoe UI;
+					text-align: center;
+					font-weight: 600;
+					font-size: 24px;
+					color: #636668;
+				}
+			}
 
-        .click {
-          height: 50px;
+			&__btn {
+				display: flex;
+				column-gap: 30px;
+				transform: translate(40%);
+				margin-top: 20px;
 
-          background: $cyan;
-        }
-      }
-    }
-  }
+				img {
+					width: 45px;
+					height: 45px;
+				}
 
+				.click {
+					height: 50px;
+
+					background: $cyan;
+				}
+			}
+		}
+	}
 }

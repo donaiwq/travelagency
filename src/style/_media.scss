@@ -1,752 +1,751 @@
-@media (max-width:1200px) {
-  .container {
-    max-width: 999px;
-  }
+@media (max-width: 1200px) {
+	.container {
+		max-width: 999px;
+	}
 
+	.home {
+		width: 100%;
 
+		.header {
+			&__row {
+				img {
+					width: 40px;
+					height: 40px;
+				}
+			}
 
-  .home {
-    width: 100%;
+			.push-button {
+				height: 30px;
+			}
+		}
 
-    .header {
-      &__row {
-        img {
-          width: 40px;
-          height: 40px;
-        }
-      }
+		&__title {
+			font-size: 37px;
+			margin: 30px 0;
+		}
 
+		&__desc {
+			font-size: 18px;
+			width: 750px;
+			transform: none;
+			margin: 0 auto;
+		}
 
+		.tabs__box input {
+			width: 165px;
+		}
+	}
 
-      .push-button {
-        height: 30px;
-      }
-    }
+	.voyage {
+		.chute {
+			width: 1185px;
+		}
+	}
 
-    &__title {
-      font-size: 37px;
-      margin: 30px 0;
-    }
+	.delight {
+		.boxy {
+			transform: translate(3%);
+		}
 
-    &__desc {
-      font-size: 18px;
-      width: 750px;
-      transform: none;
-      margin: 0 auto;
-    }
+		.pinki::before {
+			left: 13%;
+		}
 
-    .tabs__box input {
-      width: 165px;
-    }
+		.pinki {
+			.pin2 {
+				transform: translate(638%, 75%);
+			}
 
-  }
-
-  .voyage {
-    .chute {
-      width: 1185px;
-    }
-
-    .voyageka {
-      .slick-next {
-        transform: translate(-7%, 12%);
-      }
-    }
-
-  }
-
-
-  .delight {
-    .boxy {
-      transform: translate(3%);
-    }
-
-    .pinki::before {
-      left: 13%;
-    }
-
-    .pinki {
-      .pin2 {
-        transform: translate(638%, 75%);
-      }
-
-      .dash {
-        transform: translate(15%, 27%);
-      }
-    }
-  }
-
-  .packages {
-    .travelcard {
-      .slick-prev {
-        margin-left: 834px;
-      }
-    }
-  }
+			.dash {
+				transform: translate(15%, 27%);
+			}
+		}
+	}
 }
 
 @media (max-width: 992px) {
-  .container {
-    max-width: 768px;
-  }
-
+	.container {
+		max-width: 768px;
+	}
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 576px;
-  }
-
-
+	.container {
+		max-width: 576px;
+	}
 }
 
 @media (max-width: 576px) {
-  .container {
-    max-width: 425px;
-  }
+	.container {
+		max-width: 425px;
+	}
 
-  .section {
-    padding: 0 30px;
-  }
+	.section {
+		padding: 0 30px;
+	}
+	.header {
+		position: relative;
 
+		.navbar {
+			display: none;
+			position: absolute;
+			right: 0;
+			background-color: rgb(250, 250, 250);
 
+			padding: 25px;
+			height: 250px;
+			width: 220px;
+
+			&-logo {
+				h2 {
+					font-size: 18px;
+				}
+
+				font-size: 17px;
+				display: flex;
+				margin-bottom: 10px;
+
+				img {
+					width: 50px;
+					height: 50px;
+				}
+			}
+
+			&-nav {
+				flex-direction: column;
+
+				button {
+					margin-top: 7px;
+				}
+
+				&-item {
+					margin-top: -10px;
+					font-size: 16px;
+				}
+
+				&:nth-child(2) {
+					&::before {
+						position: absolute;
+						top: 2%;
+						left: -31%;
+					}
+
+					&::after {
+						position: absolute;
+						left: -25%;
+						top: 42%;
+					}
+				}
+			}
+		}
+
+		.hamburger {
+			display: block;
+			// animation: moveRight 3s linear infinite;
+		}
+	}
 }
 
 @media (max-width: 425px) {
-  .voyage {
-    display: none;
-  }
-
-
-
-  .container {
-    max-width: 375px;
-  }
-
-  .home {
-
-
-
-    background-size: 100% 100%;
-
-    &__title {
-      margin: 0;
-      font-size: 28px;
-    }
-
-
-
-    .push-button {
-      font-size: 10px;
-      margin-top: -10px;
-      width: 80px;
-      height: 5px;
-    }
-
-
-
-    &__desc {
-      width: 125px;
-      font-size: 11px;
-      margin-left: 122px;
-
-    }
-
-    .tabs {
-      display: none;
-
-      &:hover {
-        background-color: white;
-      }
-
-    }
-
-
-
-
-
-  }
-
-  .header {
-    position: relative;
-
-    .navbar {
-      display: none;
-      position: absolute;
-      right: 0;
-      background-color: rgb(250, 250, 250);
-
-      padding: 25px;
-      height: 250px;
-      width: 220px;
-
-      &-logo {
-        h2 {
-          font-size: 18px;
-
-        }
-
-        font-size: 17px;
-        display: flex;
-        margin-bottom: 10px;
-
-        img {
-
-          width: 50px;
-          height: 50px;
-        }
-
-      }
-
-      &-nav {
-        flex-direction: column;
-
-        button {
-          margin-top: 7px;
-        }
-
-        &-item {
-          margin-top: -10px;
-          font-size: 16px;
-        }
-
-        &:nth-child(2) {
-          &::before {
-            position: absolute;
-            top: 2%;
-            left: -31%;
-          }
-
-          &::after {
-            position: absolute;
-            left: -25%;
-            top: 42%;
-          }
-
-        }
-
-      }
-
-    }
-
-    .hamburger {
-
-      display: block;
-      // animation: moveRight 3s linear infinite;
-    }
-
-  }
-
-  .custom-modal {
-    .modal-request {
-      width: 278px;
-      height: 360px;
-
-      P {
-        width: 235px;
-        font-size: 14px;
-      }
-
-      &__btn {
-        width: 126px;
-      }
-    }
-  }
-
-  .holidays {
-    .shelter {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-
-
-
-      &__busimg {
-        .bus {
-          margin-top: 0;
-          width: 287px;
-          height: 200px;
-        }
-
-      }
-
-      &__content {
-        width: 300px;
-        text-align: center;
-
-        .push-button {
-          &:hover {
-            background-color: $cyan;
-          }
-
-        }
-
-        .plane {
-          img {
-            position: absolute;
-            width: 200px;
-            height: 150px;
-            animation: animate 3s infinite ease-in-out;
-          }
-
-          @keyframes animate {
-            from {
-              top: 25%;
-              left: 0;
-            }
-
-            to {
-              top: 0;
-              left: 38%;
-            }
-          }
-
-        }
-
-        p:nth-child(1) {
-          font-size: 25px;
-        }
-
-        p:nth-child(2) {
-          font-size: 13px;
-        }
-
-        p:nth-child(3) {
-          margin: 0 auto;
-          width: 200px;
-          font-size: 10px;
-        }
-
-        .push-button {
-          margin: 0 auto;
-          width: 100px;
-          height: 30px;
-        }
-      }
-    }
-  }
-
-  .postcard {
-    .postcard__map {
-      display: none;
-    }
-
-    &__title {
-      h2 {
-        font-size: 25px;
-        margin-bottom: 10px;
-      }
-
-      .descwow {
-        font-size: 10px;
-        width: 257px;
-      }
-    }
-
-    .sure {
-      display: none;
-    }
-
-    &__cards {
-      .row {
-        margin-top: -20px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 350px;
-        row-gap: 13px;
-
-        .card3 {
-          margin-right: 1px;
-
-          .cardimg3 {
-            width: 120px;
-            height: 90px;
-
-
-          }
-
-        }
-
-        .card2 {
-          .cardimg {
-            width: 120px;
-            height: 90px;
-          }
-
-        }
-
-        .card {
-          margin-left: 1px;
-
-          transform: rotate(0);
-          margin-top: 0;
-          width: 175px;
-          height: 145px;
-
-          h3 {
-            font-size: 12px;
-
-          }
-
-          p {
-            font-size: 10px;
-          }
-
-          .cardbtn {
-            display: flex;
-
-            .bookbtn {
-              width: 50px;
-              height: 25px;
-              font-size: 8px;
-
-              &:hover {
-                background-color: #fff;
-              }
-            }
-
-            .viewbtn {
-              width: 50px;
-              min-height: 25px;
-              font-size: 8px;
-
-              &:hover {
-                background-color: #fff;
-              }
-            }
-          }
-
-          img {
-            width: 120px;
-            height: 90px;
-          }
-
-
-        }
-      }
-    }
-  }
-
-  .destinations {
-    position: relative;
-    padding: 30px;
-
-    .textwow {
-      position: absolute;
-      top: 0;
-      left: 25%;
-      font-size: 20px;
-    }
-
-    &__textbox {
-      &::after {
-        display: none;
-      }
-    }
-
-    .descwow {
-      font-size: 12px;
-      width: 268px;
-
-    }
-
-    &__carusel {
-      position: relative;
-      width: 250px;
-      height: 400px;
-
-      .road {
-        display: none;
-      }
-
-      .cardpop {
-
-        border-radius: 10px;
-
-        &__btn {
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
-          margin-top: 146px;
-          margin-left: -39px;
-
-          img {
-            margin-top: 50px;
-          }
-
-          .click {
-            // position: absolute;
-            // top: 350%;
-            // left: 60%;
-            width: 70px;
-            height: 30px;
-
-          }
-        }
-
-        .desert {
-          position: absolute;
-          left: 7%;
-          margin-top: 100px;
-
-          width: 155px;
-          height: 220px;
-        }
-
-        .desert1 {
-          position: absolute;
-          left: 7%;
-          margin-top: 85px;
-          border-radius: 10px;
-          width: 150px;
-          height: 200px
-        }
-
-        &__desc {
-
-          position: relative;
-
-          h3 {
-            width: 195px;
-            line-height: 1;
-            font-size: 20px;
-            margin-top: -20px;
-            margin-bottom: 0;
-          }
-
-          width: 250px;
-          text-align: center;
-
-          .content1 {
-            text-align: center;
-            font-size: 8px;
-            width: 200px;
-          }
-
-          .content2 {
-            font-size: 13px;
-            position: absolute;
-            left: 50%;
-            top: 250%;
-          }
-
-          .pushheart {
-
-            display: none;
-          }
-        }
-      }
-
-
-    }
-  }
-
-  .delight {
-    position: relative;
-
-
-
-
-
-    .pinki {
-      .dash {
-        width: 300px;
-        position: absolute;
-        left: -33px;
-      }
-
-      &::before {
-        display: none;
-      }
-
-      .car {
-
-        width: 100px;
-        height: 70px;
-
-        img {
-          width: 200px;
-          height: 150px;
-          animation: moveRight 3s linear infinite;
-
-        }
-
-        @keyframes moveRight {
-          from {
-
-            transform: translate(55%, 20%);
-          }
-
-          to {
-            transform: translate(0%, 20%);
-          }
-        }
-
-      }
-
-      .pin1 {
-        position: absolute;
-        top: -15px;
-        right: 2px;
-      }
-
-      .pin2 {
-        position: absolute;
-        top: -15px;
-        left: -340px;
-      }
-
-      &::before {
-        width: 250px;
-      }
-    }
-
-    .descwow {
-      font-size: 15px;
-
-    }
-
-    .textwow {
-      font-size: 20px;
-      margin-bottom: 7px;
-    }
-
-    .boxy {
-      &__title {
-        width: 340px;
-      }
-
-      width: 400px;
-      transform: translate(-9.6%);
-
-      .search {
-        text-align: center;
-
-        &__btn {
-          top: 15px;
-          right: 27px;
-          width: 70px;
-          height: 30px;
-        }
-
-        input {
-
-          width: 300px;
-          height: 70px;
-        }
-      }
-    }
-  }
-
-  .voyage {
-    .chute {
-      display: none;
-    }
-  }
-
-  .conqueror {
-    width: 100%;
-
-    .conclusion {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      font-size: 10px;
-
-      p {
-        margin-top: 0;
-        font-size: 15px;
-        margin-bottom: 10px;
-      }
-
-      img {
-        width: 130px;
-        height: 60px;
-      }
-    }
-
-    .intel {
-
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      column-gap: 0;
-      row-gap: 0;
-
-
-
-      .navbar {
-
-        width: 300px;
-
-        li {
-          font-size: 15px;
-
-          a {
-            font-size: 12px;
-
-          }
-        }
-
-      }
-
-
-
-
-
-
-    }
-
-    .totally {
-      display: flex;
-      flex-wrap: wrap;
-      row-gap: 5px;
-      justify-content: center;
-
-      img {
-        width: 30px;
-        height: 30px;
-      }
-
-      .allright {
-        p {
-          text-align: center;
-        }
-
-      }
-
-    }
-  }
+	.container {
+		max-width: 375px;
+	}
+
+	.home {
+		background-size: 100% 100%;
+
+		&__title {
+			margin: 0;
+			font-size: 28px;
+		}
+
+		.push-button {
+			font-size: 10px;
+			margin-top: -10px;
+			width: 80px;
+			height: 5px;
+		}
+
+		&__desc {
+			width: 125px;
+			font-size: 11px;
+			margin-left: 122px;
+		}
+
+		.tabs {
+			display: none;
+
+			&:hover {
+				background-color: white;
+			}
+		}
+	}
+
+	.custom-modal {
+		.modal-request {
+			width: 278px;
+			height: 360px;
+
+			P {
+				width: 235px;
+				font-size: 14px;
+			}
+
+			&__btn {
+				width: 126px;
+			}
+		}
+	}
+
+	.holidays {
+		.shelter {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			&__busimg {
+				.bus {
+					margin-top: 0;
+					width: 287px;
+					height: 200px;
+				}
+			}
+
+			&__content {
+				width: 300px;
+				text-align: center;
+
+				.push-button {
+					&:hover {
+						background-color: $cyan;
+					}
+				}
+
+				.plane {
+					img {
+						position: absolute;
+						width: 200px;
+						height: 150px;
+						animation: animate 3s infinite ease-in-out;
+					}
+
+					@keyframes animate {
+						from {
+							top: 25%;
+							left: 0;
+						}
+
+						to {
+							top: 0;
+							left: 38%;
+						}
+					}
+				}
+
+				p:nth-child(1) {
+					font-size: 25px;
+				}
+
+				p:nth-child(2) {
+					font-size: 13px;
+				}
+
+				p:nth-child(3) {
+					margin: 0 auto;
+					width: 200px;
+					font-size: 10px;
+				}
+
+				.push-button {
+					margin: 0 auto;
+					width: 100px;
+					height: 30px;
+				}
+			}
+		}
+	}
+
+	.postcard {
+		.postcard__map {
+			display: none;
+		}
+
+		&__title {
+			h2 {
+				font-size: 25px;
+				margin-bottom: 10px;
+			}
+
+			.descwow {
+				font-size: 10px;
+				width: 257px;
+			}
+		}
+
+		.sure {
+			display: none;
+		}
+
+		&__cards {
+			.row {
+				margin-top: -20px;
+				margin: 0 auto;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				width: 350px;
+				row-gap: 13px;
+
+				.card3 {
+					margin-right: 1px;
+
+					.cardimg3 {
+						width: 120px;
+						height: 90px;
+					}
+				}
+
+				.card2 {
+					.cardimg {
+						width: 120px;
+						height: 90px;
+					}
+				}
+
+				.card {
+					margin-left: 1px;
+
+					transform: rotate(0);
+					margin-top: 0;
+					width: 175px;
+					height: 145px;
+
+					h3 {
+						font-size: 12px;
+					}
+
+					p {
+						font-size: 10px;
+					}
+
+					.cardbtn {
+						display: flex;
+
+						.bookbtn {
+							width: 50px;
+							height: 25px;
+							font-size: 8px;
+
+							&:hover {
+								background-color: #fff;
+							}
+						}
+
+						.viewbtn {
+							width: 50px;
+							min-height: 25px;
+							font-size: 8px;
+
+							&:hover {
+								background-color: #fff;
+							}
+						}
+					}
+
+					img {
+						width: 120px;
+						height: 90px;
+					}
+				}
+			}
+		}
+	}
+
+	.destinations {
+		position: relative;
+		padding: 30px;
+
+		.textwow {
+			position: absolute;
+			top: 0;
+			left: 25%;
+			font-size: 20px;
+		}
+
+		&__textbox {
+			&::after {
+				display: none;
+			}
+		}
+
+		.descwow {
+			font-size: 12px;
+			width: 268px;
+		}
+
+		&__carusel {
+			position: relative;
+			width: 250px;
+			height: 400px;
+
+			.road {
+				display: none;
+			}
+
+			.cardpop {
+				border-radius: 10px;
+
+				&__btn {
+					display: flex;
+					justify-content: center;
+					align-items: flex-end;
+					margin-top: 146px;
+					margin-left: -39px;
+
+					img {
+						margin-top: 50px;
+					}
+
+					.click {
+						// position: absolute;
+						// top: 350%;
+						// left: 60%;
+						width: 70px;
+						height: 30px;
+					}
+				}
+
+				.desert {
+					position: absolute;
+					left: 7%;
+					margin-top: 100px;
+
+					width: 155px;
+					height: 220px;
+				}
+
+				.desert1 {
+					position: absolute;
+					left: 7%;
+					margin-top: 85px;
+					border-radius: 10px;
+					width: 150px;
+					height: 200px;
+				}
+
+				&__desc {
+					position: relative;
+
+					h3 {
+						width: 195px;
+						line-height: 1;
+						font-size: 20px;
+						margin-top: -20px;
+						margin-bottom: 0;
+					}
+
+					width: 250px;
+					text-align: center;
+
+					.content1 {
+						text-align: center;
+						font-size: 8px;
+						width: 200px;
+					}
+
+					.content2 {
+						font-size: 13px;
+						position: absolute;
+						left: 50%;
+						top: 250%;
+					}
+
+					.pushheart {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.delight {
+		position: relative;
+
+		.pinki {
+			.dash {
+				width: 300px;
+				position: absolute;
+				left: -33px;
+			}
+
+			&::before {
+				display: none;
+			}
+
+			.car {
+				width: 100px;
+				height: 70px;
+
+				img {
+					width: 200px;
+					height: 150px;
+					animation: moveRight 3s linear infinite;
+				}
+
+				@keyframes moveRight {
+					from {
+						transform: translate(55%, 20%);
+					}
+
+					to {
+						transform: translate(0%, 20%);
+					}
+				}
+			}
+
+			.pin1 {
+				position: absolute;
+				top: -15px;
+				right: 53px;
+			}
+
+			.pin2 {
+				position: absolute;
+				top: -15px;
+				left: -178px;
+			}
+
+			&::before {
+				width: 250px;
+			}
+		}
+
+		.descwow {
+			font-size: 15px;
+		}
+
+		.textwow {
+			font-size: 20px;
+			margin-bottom: 7px;
+		}
+
+		.boxy {
+		
+
+			width: 398px;
+			transform: translate(-9.6%);
+	&__title {
+				width: 340px;
+			}
+			.search {
+				text-align: center;
+
+				&__btn {
+					top: 15px;
+					right: 27px;
+					width: 70px;
+					height: 30px;
+				}
+
+				input {
+					width: 300px;
+					height: 70px;
+				}
+			}
+		}
+	}
+
+	.voyage {
+		.chute {
+			display: none;
+		}
+		.textwow{
+			font-size: 25px;
+		}
+		.descwow{
+font-size: 15px;
+		}
+		.delight{
+			.boxy{
+				width: 333px;
+				&__title{
+					width: 267px;
+				}
+				.search{
+					input{
+						width: 260px;
+					}
+				}
+			}
+		}
+		.pinki{
+			.pin2{
+				left: -235px;
+			}
+			.dash{
+				left: -59px;
+			}
+			.car{
+				.img{
+					width: 196px;
+				}
+			}
+		}
+	}
+
+	.conqueror {
+		width: 100%;
+
+		.conclusion {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			font-size: 10px;
+
+			p {
+				margin-top: 0;
+				font-size: 15px;
+				margin-bottom: 10px;
+			}
+
+			img {
+				width: 130px;
+				height: 60px;
+			}
+		}
+
+		.intel {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			column-gap: 0;
+			row-gap: 0;
+
+			.navbar {
+				width: 300px;
+
+				li {
+					font-size: 15px;
+
+					a {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+
+		.totally {
+			display: flex;
+			flex-wrap: wrap;
+			row-gap: 5px;
+			justify-content: center;
+
+			img {
+				width: 30px;
+				height: 30px;
+			}
+
+			.allright {
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+	.packages{
+		.descwow{
+			font-size: 15px;
+		}
+		.textwow{
+			font-size: 30px;
+		}
+		.cloud{
+			display: none;
+		}
+		.travelcard{
+			&__box{
+				.bridgetext{
+					font-size: 15px;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 375px) {
-  .container {
-    max-width: 325px;
-  }
+	.container {
+		max-width: 350px;
+	}
+.header{
+	display: block;
+	.hamburger{
+		display: block;
+	}
+}
+	.home {
+		background-size: 155% 100%;
 
-  .home {
-    background-size: 155% 100%;
+		&__title {
+			font-size: 18px;
+			padding: 10px;
+		}
 
-    &__title {
-      font-size: 18px;
-      padding: 10px;
-    }
+		&__desc {
+			font-size: 12px;
+			width: 135px;
+		}
 
-    &__desc {
-      font-size: 12px;
-      width: 135px;
-    }
+		&__btnka {
+			padding-bottom: 20px;
 
-    &__btnka {
-      padding-bottom: 20px;
-
-      .btn {
-        margin-top: -15px;
-        font-size: 8px;
-      }
-    }
-  }
+			.btn {
+				margin-top: -15px;
+				font-size: 8px;
+			}
+		}
+	}
+	.postcard{
+		.row{
+			width: 338px;
+		}
+	}
+	.delight{
+		.pinki{
+			.dash{
+				left: -56px;
+			}
+			.pin1{
+				right: -7px;
+			}
+			.pin2{
+				left: -230px;
+			}
+			.car{
+				img{
+					width: 190px;
+				}
+			}
+		}
+		.boxy{
+			width: 333px;.search{
+					input{
+						width: 267px;
+					}
+				}
+			&__title{
+				width: 276px;
+				
+			}
+		}
+	}
+.conqueror{
+	.conclusion{
+		padding: 28px;
+		.first{
+			width: 297px;
+		}
+	}
+}
 }
