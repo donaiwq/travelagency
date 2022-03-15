@@ -1798,9 +1798,9 @@ a {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 415px) {
   .container {
-    max-width: 375px;
+    max-width: 365px;
   }
   .home {
     background-size: 100% 100%;
@@ -2291,7 +2291,7 @@ a {
     width: 338px;
   }
   .delight .pinki .dash {
-    left: -56px;
+    left: -66px;
   }
   .delight .pinki .pin1 {
     right: -7px;
@@ -2303,7 +2303,7 @@ a {
     width: 190px;
   }
   .delight .boxy {
-    width: 333px;
+    width: 312px;
   }
   .delight .boxy .search input {
     width: 267px;

@@ -146,9 +146,9 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 415px) {
 	.container {
-		max-width: 375px;
+		max-width: 365px;
 	}
 
 	.home {
@@ -714,7 +714,7 @@ font-size: 15px;
 	.delight{
 		.pinki{
 			.dash{
-				left: -56px;
+				left: -66px;
 			}
 			.pin1{
 				right: -7px;
@@ -729,7 +729,8 @@ font-size: 15px;
 			}
 		}
 		.boxy{
-			width: 333px;.search{
+			width: 312px;
+			.search{
 					input{
 						width: 267px;
 					}
